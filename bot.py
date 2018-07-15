@@ -27,7 +27,7 @@ while count < 172:
     demonText = demonText + "\n\n#Innate Skills:\n" + demon.s1.replace('|',' | ') + "\n" + demon.s2.replace('|',' | ') + "\n" + demon.s3.replace('|',' | ')
     demonText = demonText + "\n\n#Archetype Skills:\n" + demon.ca.replace('|',' | ') + "\n" + demon.cr.replace('|',' | ') + "\n" + demon.cy.replace('|',' | ') + "\n" + demon.cp.replace('|',' | ') + "\n" + demon.ct.replace('|',' | ')
     demonText = demonText + "\n\n#Gacha Skills:\n" + demon.gr.replace('|',' | ') + "\n" + demon.gy.replace('|',' | ') + "\n" + demon.gp.replace('|',' | ') + "\n" + demon.gt.replace('|',' | ')
-    demons[demon.name.lower()] = demonText + "```"
+    demons[demon.name.lower().replace("'",'')] = demonText + "```"
 
     count += 1
 
@@ -38,7 +38,7 @@ count = 0
 Skill = collections.namedtuple('Skill','name jp mp description owner learn')
 while count < 338:
     skill = Skill(name=c['Name'][count],jp=c['JP Name'][count],mp=str(c['Cost'][count]),description=str(c['Description'][count]),owner=str(c['Learned By'][count]),learn=str(c['Transferable From'][count]))
-    skills[skill.name.lower()] = "```md\n#" + skill.name + " | " + skill.jp + " | " + skill.mp + " | " + skill.description + "\nDemons with skill: " + skill.owner + "\nDemons to transfer skill from: " + skill.learn + "```"
+    skills[skill.name.lower().replace("'",'')] = "```md\n#" + skill.name + " | " + skill.jp + " | " + skill.mp + " | " + skill.description + "\nDemons with skill: " + skill.owner + "\nDemons to transfer skill from: " + skill.learn + "```"
     count += 1
 
 Client = discord.Client()
@@ -53,7 +53,7 @@ async def on_ready():
 
 @bot.command()
 async def demon(name : str):
-    name = name.lower()
+    name = name.lower().replace("'",'')
     try:
         selectedDemon = demons[name]
     except Exception:
@@ -63,7 +63,7 @@ async def demon(name : str):
 
 @bot.command()
 async def skill(name : str):
-    name = name.lower()
+    name = name.lower().replace("'",'')
     try:
         selectedSkill = skills[name]
     except Exception:
@@ -71,4 +71,5 @@ async def skill(name : str):
         return
     await bot.say(selectedSkill)
 
-bot.run(os.getenv('TOKEN'))
+TOKEN = os.getenv('TOKEN')
+bot.run(TOKEN)
