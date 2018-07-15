@@ -83,4 +83,4 @@ async def skill(name : str):
         return
     await bot.say(selectedSkill)
 
-bot.run(os.getenv('TOKEN'))
+bot.run(os.environ['TOKEN'])
