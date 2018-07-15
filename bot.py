@@ -1,6 +1,8 @@
 import discord
+from discord.ext.commands import Bot
 from discord.ext import commands
 
+import asyncio
 import os
 import csv
 import collections
@@ -35,6 +37,8 @@ with open('dDemons.csv', encoding='utf-8') as csvfile:
 
             demons[demon.name.lower()] = demonText + "```"
 
+print('Finished reading demons.')
+
 with open('dSkills.csv') as csvfile:
     reader = csv.reader(csvfile)
     l = list(reader)
@@ -47,7 +51,8 @@ with open('dSkills.csv') as csvfile:
         skill = Skill(name=item[1],jp=item[2],mp=item[3],description=item[4],owner=item[6],learn=item[7])
         skills[skill.name.lower()] = "```md\n#" + skill.name + " | " + skill.jp + " | " + skill.mp + " | " + skill.description + "\nDemons with skill: " + skill.owner + "\nDemons to transfer skill from: " + skill.learn + "```"
 
-#TOKEN = os.environ['EB_TOKEN']
+print('Finished reading skills.')
+
 Client = discord.Client()
 bot = commands.Bot(command_prefix='$')
 
