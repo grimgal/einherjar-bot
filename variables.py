@@ -27,6 +27,8 @@ while count < 172:
 
     count += 1
 
+print(demons)
+
 skills = {}
 url = 'https://raw.githubusercontent.com/grimgal/einherjar-bot/master/dSkills.csv'
 c = pd.read_csv(url,encoding='utf-8')
