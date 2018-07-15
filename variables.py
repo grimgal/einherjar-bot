@@ -32,8 +32,8 @@ url = 'https://raw.githubusercontent.com/grimgal/einherjar-bot/master/dSkills.cs
 c = pd.read_csv(url,encoding='utf-8')
 count = 0
 Skill = collections.namedtuple('Skill','name jp mp description owner learn')
-while count < 172:
-    skill = Skill(name=c['Name'][count],jp=c['JP Name'][count],mp=str(c['Cost'][count]),description=str(c['Description'][count]),owner=c['Learners'][count],learn=c['Transfer'][count])
+while count < 12:
+    skill = Skill(name=c['Name'][count],jp=c['JP Name'][count],mp=str(c['Cost'][count]),description=str(c['Description'][count]),owner=c['Learned By'][count],learn=c['Transferable From'][count])
     skills[skill.name.lower()] = "```md\n#" + skill.name + " | " + skill.jp + " | " + skill.mp + " | " + skill.description + "\nDemons with skill: " + skill.owner + "\nDemons to transfer skill from: " + skill.learn + "```"
     count += 1
 
