@@ -31,7 +31,15 @@ while count < 172:
 
     count += 1
 
-print(demons)
+skills = {}
+url = 'https://raw.githubusercontent.com/grimgal/einherjar-bot/master/dSkills.csv'
+c = pd.read_csv(url,encoding='utf-8')
+count = 0
+Skill = collections.namedtuple('Skill','name jp mp description owner learn')
+while count < 338:
+    skill = Skill(name=c['Name'][count],jp=c['JP Name'][count],mp=str(c['Cost'][count]),description=str(c['Description'][count]),owner=str(c['Learned By'][count]),learn=str(c['Transferable From'][count]))
+    skills[skill.name.lower()] = "```md\n#" + skill.name + " | " + skill.jp + " | " + skill.mp + " | " + skill.description + "\nDemons with skill: " + skill.owner + "\nDemons to transfer skill from: " + skill.learn + "```"
+    count += 1
 
 Client = discord.Client()
 bot = commands.Bot(command_prefix='$')
