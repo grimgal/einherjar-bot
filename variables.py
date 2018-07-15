@@ -1,7 +1,3 @@
-import discord
-from discord.ext.commands import Bot
-from discord.ext import commands
-import os
 import collections
 import pandas as pd
 
@@ -31,36 +27,13 @@ while count < 172:
 
     count += 1
 
-print(demons)
+skills = {}
+url = 'https://raw.githubusercontent.com/grimgal/einherjar-bot/master/dSkills.csv'
+c = pd.read_csv(url)
+count = 0
+Skill = collections.namedtuple('Skill','name jp mp description owner learn')
+while count < 172:
+    skill = Skill(name=c['Name'][count],jp=c['JP Name'][count],mp=c['Cost'][count],description=c['Description'][count],owner=c['Owner'][count],learn=c['Transfer'][count])
+    skills[skill.name.lower()] = "```md\n#" + skill.name + " | " + skill.jp + " | " + skill.mp + " | " + skill.description + "\nDemons with skill: " + skill.owner + "\nDemons to transfer skill from: " + skill.learn + "```"
 
-Client = discord.Client()
-bot = commands.Bot(command_prefix='$')
-
-@bot.event
-async def on_ready():
-    print('Logged in as')
-    print(bot.user.name)
-    print(bot.user.id)
-    print('------')
-
-@bot.command()
-async def demon(name : str):
-    name = name.lower()
-    try:
-        selectedDemon = demons[name]
-    except Exception:
-        await bot.say("This demon doesn't exist in my database. If the demon name has a space in it, make sure to enclose it in quotes.")
-        return
-    await bot.say(selectedDemon)
-
-@bot.command()
-async def skill(name : str):
-    name = name.lower()
-    try:
-        selectedSkill = skills[name]
-    except Exception:
-        await bot.say("This skill doesn't exist in my database. If the skill name has a space in it, make sure to enclose it in quotes.")
-        return
-    await bot.say(selectedSkill)
-
-bot.run(os.getenv('TOKEN'))
+print(skills)
