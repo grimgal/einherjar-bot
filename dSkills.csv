@@ -1,4 +1,4 @@
-Element,Name,JP Name,Cost,Description,Target,Owner,Transfer
+Element,Name,JP Name,Cost,Description,Target,Learners,Transfer
 phys,Cleave,スラッシュ,4 MP,Inflicts Physical Phys damage with 120 power on a Single Enemy.,Single Enemy,[Sandman] ,[Slime] [Cu Sith] [Tam Lin] (Teal Gacha) [Valkyrie] (Yellow Gacha) [Gui Xian] (Purple Gacha) [Dominion] (Yellow Gacha) [Oberon] (Red Gacha)
 phys,Fatal Sword,絶命剣,5 MP,Inflicts Physical Phys damage with 140 power on a Single Enemy.,Single Enemy,[Eligor] (Red Archetype)[Power]  [Valkyrie] ,[Naga] [Titania] (Purple Gacha)
 phys,Berserker God,怪力乱神,6 MP,Inflicts Physical Phys damage with 160 power on a Single Enemy.,Single Enemy,[Makami] (Red Archetype)[Ares] (Red Archetype) [Arianrhod]  [Chimera] (Clear Archetype) [Dakini]  [Bishamonten]  [Huang Di] (Red Archetype),[Ganesha] [Siegfried] [Surt]
