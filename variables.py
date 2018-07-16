@@ -75,8 +75,6 @@ while count < 172:
     #demonText = demonText + "\n\n#Elemental Resistances\nPhysical: " + demon.phys + " | Fire: " + demon.fire + " | Ice: " + demon.ice + " | Electricity: " + demon.elec + " | Force: " + demon.force + " | Light: " + demon.light + " | Dark: " + demon.dark
     demons[demon.name.lower().replace("'",'')] = demonText + "```"
     count += 1
-    if len(demonText) > 2000:
-        print(len(demonText))
 
 skills = {}
 url = 'https://raw.githubusercontent.com/grimgal/einherjar-bot/master/dSkills.csv'
@@ -84,6 +82,15 @@ c = pd.read_csv(url,encoding='utf-8')
 count = 0
 Skill = collections.namedtuple('Skill','name jp mp description owner learn')
 while count < 338:
-    skill = Skill(name=c['Name'][count],jp=c['JP Name'][count],mp=str(c['Cost'][count]),description=str(c['Description'][count]),owner=str(c['Learned By'][count]),learn=str(c['Transferable From'][count]))
-    skills[skill.name.lower()] = "```md\n#" + skill.name + " | " + skill.jp + " | " + skill.mp + " | " + skill.description + "\nDemons with skill: " + skill.owner + "\nDemons to transfer skill from: " + skill.learn + "```"
+    if isinstance(c['Transferable From'][count], float):
+        skill = Skill(name=c['Name'][count],jp=c['JP Name'][count],mp=str(c['Cost'][count]),description=str(c['Description'][count]),
+        owner=str(c['Learned By'][count]),learn='N/A')
+    else:
+        skill = Skill(name=c['Name'][count],jp=c['JP Name'][count],mp=str(c['Cost'][count]),description=str(c['Description'][count]),
+        owner=str(c['Learned By'][count]),learn=c['Transferable From'][count])
+
+    print(skill.owner)
+    skills[skill.name.lower().replace("'",'')] = "```md\n#" + skill.name + " | " + skill.jp + " | " + skill.mp + " | " + skill.description\
+    + "\n\nDemons with skill: " + ', '.join(skill.owner) + "\nDemons to transfer skill from: " + skill.learn + "```"
+    #skill_names.append(skill.name)
     count += 1
