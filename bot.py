@@ -281,10 +281,14 @@ async def s(name : str):
 
     em = discord.Embed(description="JP Name: " + skill.jp + "\nMP Cost: " + skill.mp + "\nDescription: " + skill.description,color=0xFFBF00)
     em.set_author(name=skill.name,icon_url="https://raw.githubusercontent.com/grimgal/einherjar-bot/master/icons/skills/" + icon_name)
-    em.set_footer(icon_url="https://raw.githubusercontent.com/grimgal/einherjar-bot/master/icons/skills/" + icon_target,text=skill.target)
+    if icon_name == "passive.png":
+        em.set_footer(text=skill.target)
+    else:
+        em.set_footer(icon_url="https://raw.githubusercontent.com/grimgal/einherjar-bot/master/icons/skills/" + icon_target,text=skill.target)
     em.add_field(name="Demons with skill",value=skill.owner)
     em.add_field(name="Demons to transfer skill from",value=skill.learn)
     await bot.say(embed=em)
 
 TOKEN = os.getenv('TOKEN')
+
 bot.run(TOKEN)
