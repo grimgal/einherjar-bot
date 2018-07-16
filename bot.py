@@ -93,6 +93,7 @@ def get_skills(d, t):
 
 # Read and store raw demon data from csv
 demons = {}
+demons_mobile = {}
 demon_names = []
 url = 'https://raw.githubusercontent.com/grimgal/einherjar-bot/master/dDemons.csv'
 c = pd.read_csv(url)
@@ -114,6 +115,8 @@ while count < 172:
                         [demon.race,demon.grade,demon.rarity]])
 
     statsTable = Texttable()
+    statsTable.set_deco(Texttable.VLINES)
+    statsTable.set_cols_width([len(demon.hp),len(demon.str),len(demon.mag),len(demon.vit),len(demon.agi),len(demon.luk)])
     statsTable.set_cols_align(["c", "c", "c", "c", "c", "c"])
     statsTable.add_rows([["HP","Strength","Magic","Vitality","Agility","Luck"],
     [demon.hp,demon.str,demon.mag,demon.vit,demon.agi,demon.luk]])
@@ -129,10 +132,10 @@ while count < 172:
     gachaSkills = get_skills(demon, 3)
 
     #demonText = "```md\n#" + demon.name + "\n" + infoTable.draw()
-    #demonText = demonText + "\n\n#6☆ Max Level Stats\n" + statsTable.draw()
     #demonText = demonText + "\n\n#Elemental Resistances\nPhysical: " + demon.phys + " | Fire: " + demon.fire + " | Ice: " + demon.ice + " | Electricity: " + demon.elec + " | Force: " + demon.force + " | Light: " + demon.light + " | Dark: " + demon.dark
     demonText = "```md\n#" + demon.name + "\nRace: " + demon.race + " | Grade: " + demon.grade + " | Rarity: " + demon.rarity
-    demonText = demonText + "\n\n#6☆ Max Level Stats\nHP - " + demon.hp + " | Strength - " + demon.str + " | Magic - " + demon.mag + " | Vitality - " + demon.vit + " | Agility - " + demon.agi + " | Luck - " + demon.luk
+    #demonText = demonText + "\n\n#6☆ Max Level Stats\nHP - " + demon.hp + " | Strength - " + demon.str + " | Magic - " + demon.mag + " | Vitality - " + demon.vit + " | Agility - " + demon.agi + " | Luck - " + demon.luk
+    demonText = demonText + "\n\n#6☆ Max Level Stats\n" + statsTable.draw()
     demonText = demonText + "\n\n#Elemental Resistances\n" + resistsTable.draw()
     demonText = demonText + "\n\n#Innate Skills\n" + innateSkills
     demonText = demonText + "\n#Archetype Skills\n" + archSkills
@@ -146,23 +149,31 @@ while count < 172:
     #+ "\nAragami (Red)       | " + demon.gr.replace('|',' | ') + "\nProtector (Yellow)  | " + demon.gy.replace('|',' | ')\
     #+ "\nPsychic (Purple)    | " + demon.gp.replace('|',' | ') + "\nElementalist (Teal) | " + demon.gt.replace('|',' | ')
     demons[demon.name.lower().replace("'",'')] = demonText + "```"
+    demons_mobile[demon.name.lower().replace("'",'')] = demon
+    if len(demonText) > 1900:
+        print(len(demonText))
+
     demon_names.append(demon.name)
     count += 1
 
 # Read and store raw demon data from csv
 skills = {}
+skills_mobile = {}
 skill_names = []
 url = 'https://raw.githubusercontent.com/grimgal/einherjar-bot/master/dSkills.csv'
 c = pd.read_csv(url,encoding='utf-8')
 count = 0
 Skill = collections.namedtuple('Skill','name jp mp description owner learn')
 while count < 338:
-    skill = Skill(name=c['Name'][count],jp=c['JP Name'][count],mp=str(c['Cost'][count]),description=str(c['Description'][count]),owner=str(c['Learned By'][count]),learn=c['Transferable From'][count])
-    if isinstance(skill.learn, float):
+    if isinstance(c['Transferable From'][count], float):
         skill = Skill(name=c['Name'][count],jp=c['JP Name'][count],mp=str(c['Cost'][count]),description=str(c['Description'][count]),owner=str(c['Learned By'][count]),learn='N/A')
+    else:
+        skill = Skill(name=c['Name'][count],jp=c['JP Name'][count],mp=str(c['Cost'][count]),description=str(c['Description'][count]),owner=str(c['Learned By'][count]),learn=c['Transferable From'][count])
 
     skills[skill.name.lower().replace("'",'')] = "```md\n#" + skill.name + " | " + skill.jp + " | " + skill.mp + " | " + skill.description\
     + "\n\nDemons with skill: " + skill.owner + "\nDemons to transfer skill from: " + skill.learn + "```"
+    skills_mobile[skill.name.lower().replace("'",'')] = skill
+
     skill_names.append(skill.name)
     count += 1
 
@@ -176,11 +187,12 @@ async def on_ready():
     print(bot.user.id)
     print('------')
 
+# Get demon info
 @bot.command()
 async def demon(name : str):
     name = name.lower().replace("'",'')
     try:
-        selectedDemon = demons[name]
+        demon = demons[name]
     except Exception:
         maybe = difflib.get_close_matches(name, demon_names)
         if len(maybe) > 0:
@@ -189,13 +201,14 @@ async def demon(name : str):
             await bot.say("This demon doesn't exist in my database. If the demon name has a space in it, make sure to enclose it in quotes.")
         return
 
-    await bot.say(selectedDemon)
+    await bot.say(demon)
 
+# Get skill info
 @bot.command()
 async def skill(name : str):
     name = name.lower().replace("'",'')
     try:
-        selectedSkill = skills[name]
+        skill = skills[name]
     except Exception:
         maybe = difflib.get_close_matches(name, skill_names)
         if len(maybe) > 0:
@@ -204,7 +217,53 @@ async def skill(name : str):
             await bot.say("This skill doesn't exist in my database. If the skill name has a space in it, make sure to enclose it in quotes.")
         return
 
-    await bot.say(selectedSkill)
+    await bot.say(skill)
+
+# Get demon info (mobile)
+@bot.command()
+async def d(name):
+    name = name.lower().replace("'",'')
+    try:
+        demon = demons_mobile[name]
+    except Exception:
+        maybe = difflib.get_close_matches(name, demon_names)
+        if len(maybe) > 0:
+            await bot.say("This demon doesn't exist in my database. Did you mean:\n```fix\n" + ", ".join(maybe) + "```")
+        else:
+            await bot.say("This demon doesn't exist in my database. If the demon name has a space in it, make sure to enclose it in quotes.")
+        return
+
+    em = discord.Embed(title=demon.name,description="Race: " + demon.race + " | Grade: " + demon.grade + " | Rarity: " + demon.rarity,color=0xFFBF00)
+    em.add_field(name="Elemental Resistances",value="Phys: " + demon.phys + "\nFire: " + demon.fire + "\nIce: " + demon.ice\
+                 + "\nElec: " + demon.elec + "\nForce: " + demon.force + "\nLight: " + demon.light + "\nDark: " + demon.dark)
+    em.add_field(name="6☆ Max Level Stats",value="HP - " + demon.hp + "\nStrength - " + demon.str + "\nMagic - " + demon.mag\
+                  + "\nVitality - " + demon.vit + "\nAgility - " + demon.agi + "\nLuck - " + demon.luk)
+    em.add_field(name="Innate Skills",value="Skill 1 - " + demon.s1.split('|')[0] + "\nSkill 2 - " +  demon.s2.split('|')[0] + "\nSkill 3 - " + demon.s3.split('|')[0],\
+                 inline=False)
+    em.add_field(name="Archetype Skills",value="Common (Clear) - " + demon.ca.split('|')[0]\
+                 + "\nAragami (Red) - " + demon.cr.split('|')[0] + "\nProtector (Yellow) - " + demon.cy.split('|')[0]\
+                 + "\nPsychic (Purple) - " + demon.cp.split('|')[0] + "\nElementalist (Teal) - " + demon.ct.split('|')[0])
+    em.add_field(name="\nGacha Skills",value="Aragami (Red) - " + demon.gr.split('|')[0] + "\nProtector (Yellow) - " + demon.gy.split('|')[0]\
+                 + "\nPsychic (Purple) - " + demon.gp.split('|')[0] + "\nElementalist (Teal) - " + demon.gt.split('|')[0])
+    await bot.say(embed=em)
+
+# Get skill info (mobile)
+@bot.command()
+async def s(name : str):
+    name = name.lower().replace("'",'')
+    try:
+        skill = skills_mobile[name]
+    except Exception:
+        maybe = difflib.get_close_matches(name, skill_names)
+        if len(maybe) > 0:
+            await bot.say("This skill doesn't exist in my database. Did you mean:\n```fix\n" + ", ".join(maybe) + "```")
+        else:
+            await bot.say("This skill doesn't exist in my database. If the skill name has a space in it, make sure to enclose it in quotes.")
+        return
+    em = discord.Embed(title=skill.name,description="JP Name: " + skill.jp + "\nMP Cost: " + skill.mp + "\nDescription: " + skill.description,color=0xFFBF00)
+    em.add_field(name="Demons with skill",value=skill.owner)
+    em.add_field(name="Demons to transfer skill from",value=skill.learn)
+    await bot.say(embed=em)
 
 TOKEN = os.getenv('TOKEN')
 bot.run(TOKEN)
