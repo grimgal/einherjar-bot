@@ -163,12 +163,14 @@ skill_names = []
 url = 'https://raw.githubusercontent.com/grimgal/einherjar-bot/master/dSkills.csv'
 c = pd.read_csv(url,encoding='utf-8')
 count = 0
-Skill = collections.namedtuple('Skill','name jp mp description owner learn')
+Skill = collections.namedtuple('Skill','name jp mp description owner learn element target')
 while count < 338:
     if isinstance(c['Transferable From'][count], float):
-        skill = Skill(name=c['Name'][count],jp=c['JP Name'][count],mp=str(c['Cost'][count]),description=str(c['Description'][count]),owner=str(c['Learned By'][count]),learn='N/A')
+        skill = Skill(name=c['Name'][count],jp=c['JP Name'][count],mp=str(c['Cost'][count]),description=str(c['Description'][count]),\
+                      owner=str(c['Learned By'][count]),learn='N/A',element=c['Element'][count],target=c['Target'][count])
     else:
-        skill = Skill(name=c['Name'][count],jp=c['JP Name'][count],mp=str(c['Cost'][count]),description=str(c['Description'][count]),owner=str(c['Learned By'][count]),learn=c['Transferable From'][count])
+        skill = Skill(name=c['Name'][count],jp=c['JP Name'][count],mp=str(c['Cost'][count]),description=str(c['Description'][count]),\
+                      owner=str(c['Learned By'][count]),learn=c['Transferable From'][count],element=c['Element'][count],target=c['Target'][count])
 
     skills[skill.name.lower().replace("'",'')] = "```md\n#" + skill.name + " | " + skill.jp + " | " + skill.mp + " | " + skill.description\
     + "\n\nDemons with skill: " + skill.owner + "\nDemons to transfer skill from: " + skill.learn + "```"
@@ -233,7 +235,10 @@ async def d(name):
             await bot.say("This demon doesn't exist in my database. If the demon name has a space in it, make sure to enclose it in quotes.")
         return
 
-    em = discord.Embed(title=demon.name,description="Race: " + demon.race + " | Grade: " + demon.grade + " | Rarity: " + demon.rarity,color=0xFFBF00)
+    web_name = demon.name.replace(' ','%20')
+    em = discord.Embed(title=demon.name,description="Race: " + demon.race + " | Grade: " + demon.grade + " | Rarity: " + demon.rarity,\
+                       color=0xFFBF00)
+    em.set_thumbnail(url="https://raw.githubusercontent.com/grimgal/einherjar-bot/master/icons/" + web_name + ".jpg")
     em.add_field(name="Elemental Resistances",value="Phys: " + demon.phys + "\nFire: " + demon.fire + "\nIce: " + demon.ice\
                  + "\nElec: " + demon.elec + "\nForce: " + demon.force + "\nLight: " + demon.light + "\nDark: " + demon.dark)
     em.add_field(name="6☆ Max Level Stats",value="HP - " + demon.hp + "\nStrength - " + demon.str + "\nMagic - " + demon.mag\
@@ -260,7 +265,23 @@ async def s(name : str):
         else:
             await bot.say("This skill doesn't exist in my database. If the skill name has a space in it, make sure to enclose it in quotes.")
         return
-    em = discord.Embed(title=skill.name,description="JP Name: " + skill.jp + "\nMP Cost: " + skill.mp + "\nDescription: " + skill.description,color=0xFFBF00)
+
+
+    icon_name = skill.element + ".png"
+    icon_target = skill.target
+    if icon_name == "fire.png":
+        icon_name = "fira.png"
+
+    if icon_target == "Single Enemy" or icon_target == "Single Party Member":
+        icon_target = "Single.png"
+    elif icon_target == "All Enemies" or icon_target == "All Party Members":
+        icon_target = "All.png"
+    elif icon_target == "Random Enemy/ies":
+        icon_target = "Random.png"
+
+    em = discord.Embed(description="JP Name: " + skill.jp + "\nMP Cost: " + skill.mp + "\nDescription: " + skill.description,color=0xFFBF00)
+    em.set_author(name=skill.name,icon_url="https://raw.githubusercontent.com/grimgal/einherjar-bot/master/icons/skills/" + icon_name)
+    em.set_footer(icon_url="https://raw.githubusercontent.com/grimgal/einherjar-bot/master/icons/skills/" + icon_target,text=skill.target)
     em.add_field(name="Demons with skill",value=skill.owner)
     em.add_field(name="Demons to transfer skill from",value=skill.learn)
     await bot.say(embed=em)
