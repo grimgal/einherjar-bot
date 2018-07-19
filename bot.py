@@ -8,6 +8,26 @@ import math
 import pandas as pd
 from texttable import Texttable
 
+# Returns any localized names
+def demon_name(name):
+    name.lower().replace("'",'')
+    if name == "suzaku":
+        name = "feng huang"
+    elif name == "seiryu" or name == "long" or name == "seiryuu":
+        name = "qing long"
+    elif name == "kohryu":
+        name = "huang long"
+    elif name == "koutei":
+        name = "huang di"
+    elif name == "seitei tensei":
+        name = "wu kong"
+    elif name == "hokuto seikun":
+        name = "beiji-wang"
+    elif name == "byakko":
+        name = "baihu"
+
+    return name
+
 # Returns list used for skill tables
 def get_skill_list(skill, arch = ''):
     skills = skill.split('|')
@@ -99,7 +119,7 @@ url = 'https://raw.githubusercontent.com/grimgal/einherjar-bot/master/dDemons.cs
 c = pd.read_csv(url)
 count = 0
 Demon = collections.namedtuple('Demon','name race grade rarity phys fire ice elec force light dark hp str mag vit agi luk s1 s2 s3 ca cr cy cp ct gr gy gp gt')
-while count < 172:
+while count < 179:
     demon = Demon(name=c['Name'][count], race=c['Race'][count], grade=str(int(c['Grade'][count])), rarity='☆' * int(c['Rarity'][count]),
     phys=str(c['Phys'][count]), fire=str(c['Fire'][count]), ice=str(c['Ice'][count]),
     elec=str(c['Elec'][count]), force=str(c['Force'][count]), light=str(c['Light'][count]), dark=str(c['Dark'][count]),
@@ -164,7 +184,7 @@ url = 'https://raw.githubusercontent.com/grimgal/einherjar-bot/master/dSkills.cs
 c = pd.read_csv(url,encoding='utf-8')
 count = 0
 Skill = collections.namedtuple('Skill','name jp mp description owner learn element target')
-while count < 338:
+while count < 343:
     if isinstance(c['Transferable From'][count], float):
         skill = Skill(name=c['Name'][count],jp=c['JP Name'][count],mp=str(c['Cost'][count]),description=str(c['Description'][count]),\
                       owner=str(c['Learned By'][count]),learn='N/A',element=c['Element'][count],target=c['Target'][count])
@@ -192,7 +212,8 @@ async def on_ready():
 # Get demon info
 @bot.command()
 async def demon(name : str):
-    name = name.lower().replace("'",'')
+    name = demon_name(name)
+
     try:
         demon = demons[name]
     except Exception:
@@ -224,7 +245,8 @@ async def skill(name : str):
 # Get demon info (mobile)
 @bot.command()
 async def d(name):
-    name = name.lower().replace("'",'')
+    name = demon_name(name)
+
     try:
         demon = demons_mobile[name]
     except Exception:
@@ -290,5 +312,4 @@ async def s(name : str):
     await bot.say(embed=em)
 
 TOKEN = os.getenv('TOKEN')
-
 bot.run(TOKEN)
