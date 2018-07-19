@@ -10,7 +10,7 @@ from texttable import Texttable
 
 # Returns any localized names
 def demon_name(name):
-    name.lower().replace("'",'')
+    name = name.lower().replace("'",'')
     if name == "suzaku":
         name = "feng huang"
     elif name == "seiryu" or name == "long" or name == "seiryuu":
@@ -311,4 +311,6 @@ async def s(name : str):
     await bot.say(embed=em)
 
 TOKEN = os.getenv('TOKEN')
+TOKEN = 'NDY4MTk3MTkwODg0NTI0MDMy.Di1qMw.KM0hJbfvrCp5I5WB1qyndaqeP9M'
+
 bot.run(TOKEN)
