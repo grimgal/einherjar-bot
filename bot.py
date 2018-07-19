@@ -213,7 +213,6 @@ async def on_ready():
 @bot.command()
 async def demon(name : str):
     name = demon_name(name)
-
     try:
         demon = demons[name]
     except Exception:
@@ -312,4 +311,5 @@ async def s(name : str):
     await bot.say(embed=em)
 
 TOKEN = os.getenv('TOKEN')
+
 bot.run(TOKEN)
