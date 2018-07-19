@@ -164,7 +164,7 @@ url = 'https://raw.githubusercontent.com/grimgal/einherjar-bot/master/dSkills.cs
 c = pd.read_csv(url,encoding='utf-8')
 count = 0
 Skill = collections.namedtuple('Skill','name jp mp description owner learn element target')
-while count < 344:
+while count < 338:
     if isinstance(c['Transferable From'][count], float):
         skill = Skill(name=c['Name'][count],jp=c['JP Name'][count],mp=str(c['Cost'][count]),description=str(c['Description'][count]),\
                       owner=str(c['Learned By'][count]),learn='N/A',element=c['Element'][count],target=c['Target'][count])
@@ -192,21 +192,6 @@ async def on_ready():
 # Get demon info
 @bot.command()
 async def demon(name : str):
-    if name == "Suzaku":
-        name = "Feng Huang"
-    elif name == "Seiryu" or name == "Long" or name == "Seiryuu":
-        name = "Qing Long"
-    elif name == "Kohryu":
-        name = "Huang Long"
-    elif name == "Koutei":
-        name = "Huang Di"
-    elif name == "Seitei Tensei":
-        name = "Wu Kong"
-    elif name == "Hokuto Seikun":
-        name = "Beiji-Wang"
-    elif name == "Byakko":
-        name = "Baihu"
-
     name = name.lower().replace("'",'')
     try:
         demon = demons[name]
@@ -305,6 +290,5 @@ async def s(name : str):
     await bot.say(embed=em)
 
 TOKEN = os.getenv('TOKEN')
-TOKEN = 'NDY4MTk3MTkwODg0NTI0MDMy.Di1qMw.KM0hJbfvrCp5I5WB1qyndaqeP9M'
 
 bot.run(TOKEN)

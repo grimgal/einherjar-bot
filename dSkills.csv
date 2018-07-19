@@ -175,7 +175,6 @@ recovery,Mother's Creation,???,8 MP,Revive a Single Party Member with full HP an
 recovery,Amrita,アムリタ,4 MP,Cures all status ailments of a Single Party Member.,Single Party Member,"[Cu Sith] (Clear Archetype), [Nekomata] (Yellow Archetype), [Abraxas] (Yellow Archetype), [Makami] (Clear Archetype), [Horus] (Yellow Archetype), [Sandalphon] (Clear Archetype)","[Hathor], [Garuda] (Yellow Gacha)"
 recovery,Prayer,常世の祈り,5 MP,Cures all status ailments of All Party Members.,All Party Members,"[Dominion] (Yellow Archetype), [Vishnu] (Yellow Archetype)",
 recovery,Silent Prayer,静寂の祈り,7 MP,Cures all status ailments of All Party Members and Enemies.,Universal,"[Sarasvati], [Jeanne D'Arc] (Yellow Archetype), [Asherah] (Yellow Archetype)",[Pallas Athena] (Yellow Gacha)
-recovery,セアカトルの再臨,セアカトルの再臨,7 MP,Revive All Party Members with full HP.,All Party Members,,
 support,Tarukaja,タルカジャ,5 MP,Attack +20% for 3 turns,All Party Members,"[Cu Sith] (Yellow Archetype), [Abraxas], [Shadow] (Clear Archetype), [Setanta] (Yellow Archetype), [Bishamonten] (Clear Archetype), [Odin] (Yellow Archetype)","[Archangel], [Apis], [Oberon] (Purple Gacha), [Trumpeter] (Red Gacha)"
 support,Rakukaja,ラクカジャ,5 MP,Defense +20% for 3 turns,All Party Members,"[Eligor] (Yellow Archetype), [Angel] (Clear Archetype), [Abraxas] (Clear Archetype), [Sparna], [Gui Xian] (Clear Archetype), [Ganesha]","[Zouchouten], [Kikuri-Hime] (Teal Gacha), [Amaterasu] (Purple Gacha)"
 support,Sukukaja,スクカジャ,5 MP,Hit/avoid +20% for 3 turns,All Party Members,"[Chagrin] (Yellow Archetype), [Nekomata] (Clear Archetype), [Hamsa], [Kaiwan] (Clear Archetype), [Koumokuten] (Yellow Archetype), [Yatagarasu] (Yellow Archetype)","[Kurama Tengu], [Jatayu], [Mad Gasser] (Purple Gacha), [Tsukuyomi] (Red Gacha)"
@@ -204,9 +203,6 @@ support,Tetra Break,テトラコワース,3 MP,Remove Tetrakarn,All Enemies,"[Va
 support,Redia Break,リディアコワース,3 MP,Remove Redia,All Enemies,"[Archangel] (Yellow Archetype), [Arianrhod] (Yellow Archetype)","[Vetala], "
 support,Discord,ディスコード,3 MP,Remove Charge and Concentrate,All Enemies,"[Preta] (Yellow Archetype), [Apis] (Yellow Archetype), [Bishamonten] (Yellow Archetype)",[Chatterskull]
 support,Tag,バトンタッチ,3 MP,Pass without consuming Press Turn,Self,"[Jack Frost] (Yellow Archetype), [Pyro Jack] (Yellow Archetype)",
-support,Tetraja,テトラジャ,4 MP,All party members become immune to Instant Kill this turn.,All Party Members,,
-support,五行思想,五行思想,6 MP,Repel all magical attacks for 1 turn.,All Party Members,,
-support,Luster Candy,ラスタキャンディ,8 MP,Tarukaja + Rakukaja + Sukukaja for 3 turns,All Party Members,,
 passive,Mana Bonus,???,Passive,Max MP +1,Self,"[Melchom] (Purple Archetype), [Pyro Jack] (Purple Archetype), [Take-Minakata] (Purple Archetype), [Hathor] (Purple Archetype), [Mothman] (Clear Archetype)","[Yatagarasu] (Yellow Gacha), [Tsukuyomi]"
 passive,Mana Gain,???,Passive,Max MP +2,Self,"[Baphomet] (Clear Archetype), [Horus] (Clear Archetype), [Isis] (Clear Archetype), [Titania] (Clear Archetype), [Dantalian] (Clear Archetype), [Mastema] (Clear Archetype), [Lakshmi] (Clear Archetype), [Metatron] (Purple Archetype)",
 passive,Life Bonus,???,Passive,Max HP +10%,Self,"[Slime], [Cu Sith] (Purple Archetype), [Azumi] (Purple Archetype)",[Nozuchi]
@@ -325,7 +321,7 @@ passive,Wild Intuition,???,Passive,Critical rate of damage received -15%,Self,"[
 passive,Monstrous Intuition,???,Passive,Critical rate of damage received -25%,Self,"[Sandalphon] (Purple Archetype), [King Frost] (Clear Archetype), [Beelzebub] (Clear Archetype)","[Succubus] (Purple Gacha), [Azrael] (Purple Gacha)"
 passive,Bloody Glee,???,Passive,Critical rate +15%,Self,"[Oni] (Purple Archetype), [Ares] (Purple Archetype), [Abaddon] (Purple Archetype)","[Silky] (Red Gacha), [Kaiwan] (Purple Gacha), [Koumokuten] (Purple Gacha), [Feng Huang] (Red Gacha), [Beelzebub] (Purple Gacha), [Loki] (Red Gacha)"
 passive,Massacre Glee,???,Passive,Critical rate +25%,Self,"[Yomotsu-Ikusa] (Purple Archetype), [Girimehkala] (Purple Archetype)","[Orochi] (Teal Gacha), [Sarasvati] (Purple Gacha), [Cu Chulainn]"
-passive,Speedster,???,Passive,Battle speed +50%,Self,,
+passive,Speed Master,???,Passive,Battle speed +50%,Self,"[Hamsa] (Purple Archetype), [Fenrir] (Purple Archetype), [Sleipnir], [Yatagarasu]","[Kama], "
 passive,Imposing Stance,???,Passive,Remove 1 enemy Turn Icon during first round when ambushed,Self,"[Baihu] (Purple Archetype), [Zhong Kui] (Purple Archetype), [Surt] (Clear Archetype)",
 passive,Auto-Tarunda,???,Passive,Start battle with Tarunda,Self,[Feng Huang],
 passive,Auto-Sukunda,???,Passive,Start battle with Sukunda,Self,[Yatagarasu],
@@ -341,4 +337,3 @@ passive,Poison Floor Cross,???,Passive,Damage from Poison Floors -50%,Self,"[Pis
 passive,Null Poison Floor,???,Passive,Nullify Poison Floors damage,Self,"[Zouchouten] (Purple Archetype), [Orochi]",
 passive,Null Dark Zone,???,Passive,Immune to Dark Zone effects,Self,"[Kelpie] (Clear Archetype), [Feng Huang] (Clear Archetype), [Throne], [Loki] (Purple Archetype)",
 passive,Good Fortune,???,Passive,"Battle experience +20%, Macca +20%",Self,[Kanbari],
-passive,龍の反応,龍の反応,Passive,Phys hit/avoid +15%,Self,,
