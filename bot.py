@@ -264,7 +264,7 @@ async def d(name):
                  + "\nElec: " + demon.elec + "\nForce: " + demon.force + "\nLight: " + demon.light + "\nDark: " + demon.dark)
     em.add_field(name="6☆ Max Level Stats",value="HP - " + demon.hp + "\nStrength - " + demon.str + "\nMagic - " + demon.mag\
                   + "\nVitality - " + demon.vit + "\nAgility - " + demon.agi + "\nLuck - " + demon.luk)
-    em.add_field(name="Innate Skills",value="Skill 1 - " + demon.s1.split('|')[0] + "\nSkill 2 - " +  demon.s2.split('|')[0] + "\nSkill 3 - " + demon.s3.split('|')[0],\
+    em.add_field(name="Base Skills",value="Transferable Skill - " + demon.s1.split('|')[0] + "\nInnate Skill 1 - " +  demon.s2.split('|')[0] + "\nInnate Skill 2 - " + demon.s3.split('|')[0],\
                  inline=False)
     em.add_field(name="Archetype Skills",value="Common (Clear) - " + demon.ca.split('|')[0]\
                  + "\nAragami (Red) - " + demon.cr.split('|')[0] + "\nProtector (Yellow) - " + demon.cy.split('|')[0]\
