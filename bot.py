@@ -218,10 +218,12 @@ async def demon(name : str):
     except Exception:
         maybe = difflib.get_close_matches(name, demon_names)
         if len(maybe) > 0:
-            await bot.say("This demon doesn't exist in my database. Did you mean:\n```fix\n" + ", ".join(maybe) + "```")
+            demon = demons[maybe[0]]
+            pass
+            #await bot.say("This demon doesn't exist in my database. Did you mean:\n```fix\n" + ", ".join(maybe) + "```")
         else:
             await bot.say("This demon doesn't exist in my database. If the demon name has a space in it, make sure to enclose it in quotes.")
-        return
+            return
 
     await bot.say(demon)
 
@@ -234,10 +236,12 @@ async def skill(name : str):
     except Exception:
         maybe = difflib.get_close_matches(name, skill_names)
         if len(maybe) > 0:
-            await bot.say("This skill doesn't exist in my database. Did you mean:\n```fix\n" + ", ".join(maybe) + "```")
+            #await bot.say("This skill doesn't exist in my database. Did you mean:\n```fix\n" + ", ".join(maybe) + "```")
+            skill = skills[maybe[0]]
+            pass
         else:
             await bot.say("This skill doesn't exist in my database. If the skill name has a space in it, make sure to enclose it in quotes.")
-        return
+            return
 
     await bot.say(skill)
 
@@ -251,10 +255,12 @@ async def d(name):
     except Exception:
         maybe = difflib.get_close_matches(name, demon_names)
         if len(maybe) > 0:
-            await bot.say("This demon doesn't exist in my database. Did you mean:\n```fix\n" + ", ".join(maybe) + "```")
+            demon = demons_mobile[maybe[0]]
+            pass
+            #await bot.say("This demon doesn't exist in my database. Did you mean:\n```fix\n" + ", ".join(maybe) + "```")
         else:
             await bot.say("This demon doesn't exist in my database. If the demon name has a space in it, make sure to enclose it in quotes.")
-        return
+            return
 
     web_name = demon.name.replace(' ','%20')
     em = discord.Embed(title=demon.name,description="Race: " + demon.race + " | Grade: " + demon.grade + " | Rarity: " + demon.rarity,\
@@ -282,10 +288,12 @@ async def s(name : str):
     except Exception:
         maybe = difflib.get_close_matches(name, skill_names)
         if len(maybe) > 0:
-            await bot.say("This skill doesn't exist in my database. Did you mean:\n```fix\n" + ", ".join(maybe) + "```")
+            #await bot.say("This skill doesn't exist in my database. Did you mean:\n```fix\n" + ", ".join(maybe) + "```")
+            skill = skills_mobile[maybe[0]]
+            pass
         else:
             await bot.say("This skill doesn't exist in my database. If the skill name has a space in it, make sure to enclose it in quotes.")
-        return
+            return
 
 
     icon_name = skill.element + ".png"
