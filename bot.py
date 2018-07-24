@@ -76,7 +76,7 @@ def get_skills(d, t):
             table = Texttable()
             table.set_deco(Texttable.VLINES)
             table.set_cols_align(["l", "c", "c", "l"])
-            table.set_cols_width([19, largest_character_count([d.ca.split('|')[0], d.cr.split('|')[0], d.cy.split('|')[0], d.cp.split('|')[0], d.ct.split('|')[0]]), 7,150])
+            table.set_cols_width([19, largest_character_count([d.ca.split('|')[0], d.cr.split('|')[0], d.cy.split('|')[0], d.cp.split('|')[0], d.ct.split('|')[0]]), 7, 150])
 
             if count == 0:
                 table.add_row(get_skill_list(d.ca, "Common (Clear)"))
@@ -87,6 +87,7 @@ def get_skills(d, t):
             elif count == 3:
                 table.add_row(get_skill_list(d.cp, "Psychic (Purple)"))
             elif count == 4:
+                print(d.ct)
                 table.add_row(get_skill_list(d.ct, "Elementalist (Teal)"))
             r = r + table.draw().strip() + "\n"
             count += 1
