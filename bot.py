@@ -87,7 +87,6 @@ def get_skills(d, t):
             elif count == 3:
                 table.add_row(get_skill_list(d.cp, "Psychic (Purple)"))
             elif count == 4:
-                print(d.ct)
                 table.add_row(get_skill_list(d.ct, "Elementalist (Teal)"))
             r = r + table.draw().strip() + "\n"
             count += 1
@@ -219,8 +218,7 @@ async def demon(name : str):
     except Exception:
         maybe = difflib.get_close_matches(name, demon_names)
         if len(maybe) > 0:
-            demon = demons[maybe[0]]
-            pass
+            demon = demons[maybe[0].lower().replace("'",'')]
             #await bot.say("This demon doesn't exist in my database. Did you mean:\n```fix\n" + ", ".join(maybe) + "```")
         else:
             await bot.say("This demon doesn't exist in my database. If the demon name has a space in it, make sure to enclose it in quotes.")
@@ -238,8 +236,7 @@ async def skill(name : str):
         maybe = difflib.get_close_matches(name, skill_names)
         if len(maybe) > 0:
             #await bot.say("This skill doesn't exist in my database. Did you mean:\n```fix\n" + ", ".join(maybe) + "```")
-            skill = skills[maybe[0]]
-            pass
+            skill = skills[maybe[0].lower().replace("'",'')]
         else:
             await bot.say("This skill doesn't exist in my database. If the skill name has a space in it, make sure to enclose it in quotes.")
             return
@@ -256,8 +253,7 @@ async def d(name):
     except Exception:
         maybe = difflib.get_close_matches(name, demon_names)
         if len(maybe) > 0:
-            demon = demons_mobile[maybe[0]]
-            pass
+            demon = demons_mobile[maybe[0].lower().replace("'",'')]
             #await bot.say("This demon doesn't exist in my database. Did you mean:\n```fix\n" + ", ".join(maybe) + "```")
         else:
             await bot.say("This demon doesn't exist in my database. If the demon name has a space in it, make sure to enclose it in quotes.")
@@ -290,8 +286,7 @@ async def s(name : str):
         maybe = difflib.get_close_matches(name, skill_names)
         if len(maybe) > 0:
             #await bot.say("This skill doesn't exist in my database. Did you mean:\n```fix\n" + ", ".join(maybe) + "```")
-            skill = skills_mobile[maybe[0]]
-            pass
+            skill = skills_mobile[maybe[0].lower().replace("'",'')]
         else:
             await bot.say("This skill doesn't exist in my database. If the skill name has a space in it, make sure to enclose it in quotes.")
             return
@@ -320,5 +315,4 @@ async def s(name : str):
     await bot.say(embed=em)
 
 TOKEN = os.getenv('TOKEN')
-
 bot.run(TOKEN)
