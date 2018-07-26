@@ -184,6 +184,8 @@ url = 'https://raw.githubusercontent.com/grimgal/einherjar-bot/master/dSkills.cs
 c = pd.read_csv(url,encoding='utf-8')
 count = 0
 Skill = collections.namedtuple('Skill','name jp mp description owner learn element target')
+
+# 1 less than total skill count
 while count < 346:
     if isinstance(c['Transferable From'][count], float):
         skill = Skill(name=c['Name'][count],jp=c['JP Name'][count],mp=str(c['Cost'][count]),description=str(c['Description'][count]),\

@@ -113,7 +113,7 @@ almighty,Megidolaon,メギドラ,8 MP,Inflicts Magic Almighty damage with 120 po
 almighty,Pralaya,メギドラオン,8 MP,Inflicts Magic Almighty damage with 125 power on All Enemies while removing Repel Phys and Repel Mag. The damage inflicted by this skill is dependent on Phys ATK.,All Enemies,"[Shiva], ",
 almighty,Apocalypse,プララヤ,8 MP,Inflicts Magic Almighty damage with 110 power on All Enemies with 30% chance to inflict Mute.,All Enemies,[Trumpeter],
 almighty,Morning Star,ジャッジメント,8 MP,Inflicts Magic Almighty damage with 150 power on All Enemies. 3 Uses.,All Enemies,[Lucifer],
-almighty,Judgement,精神漏出,9 MP,Inflicts Magic Almighty damage with 150 power on All Enemies and increases own party's ATK 20% for 3 turns.,All Enemies,"[Trumpeter] (Red Archetype), [Ishtar], [Jeanne D'Arc] (Red Archetype)",
+almighty,Judgement,精神漏出,9 MP,Inflicts Magic Almighty damage with 100 power on All Enemies and increases own party's ATK 20% for 3 turns.,All Enemies,"[Trumpeter] (Red Archetype), [Ishtar], [Jeanne D'Arc] (Red Archetype)",
 almighty,Sea of Chaos,シナイの神火,9 MP,Inflicts Magic Almighty damage with 100 power on All Enemies and reduces enemy's DEF 20% for 3 turns.,All Enemies,[Asherah] (Clear Archetype),
 almighty,Fire of Sinai,魅了の神弓,7 MP,Inflicts Magic Almighty damage 5 times with 45 power on Random Enemy/ies.,Random Enemy/ies,[Metatron],
 ailment,Poisma,ポイズマ,5 MP,40% chance to inflict Poison on a Single Enemy.,Single Enemy,[Black Ooze],"[Anubis] (Yellow Gacha), [Blob]"
