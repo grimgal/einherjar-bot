@@ -130,7 +130,8 @@ ailment,Marin Karin,マリンカリン,5 MP,40% chance to inflict Charm on a Sin
 ailment,Marin Karion,マリンカリオン,6 MP,50% chance to inflict Charm on a Single Enemy.,Single Enemy,[Kikuri-Hime],[Lucifer] (Teal Gacha)
 ailment,Mamarin Karin,マハマリンカリン,6 MP,30% chance to inflict Charm on All Enemies.,All Enemies,,"[Seth] (Yellow Gacha), [Thor] (Teal Gacha), [Succubus]"
 ailment,Mamarin Karion,マハマリカリオン,7 MP,40% chance to inflict Charm on All Enemies.,All Enemies,"[Oberon], ",[Thor] (Yellow Gacha)
-ailment,Sexy Dance,セクシーダンス,6 MP,30% chance to inflict Charm 2 to 4 times on Random Enemy/ies.,Random Enemy/ies,"[Lakshmi], [Mermaid] (Clear Archetype)",[Ares] (Yellow Gacha)
+ailment,Sexy Dance,セクシーダンス,6 MP,30% chance to inflict Charm 2 to 4 times on Random Enemy/ies.,Random Enemy/ies,[Mermaid] (Clear Archetype),[Ares] (Yellow Gacha)
+ailment,Lotus Dance,蓮華の舞,6 MP,60% chance to inflict Charm on All Enemies.,All Enemies,[Lakshmi],
 ailment,Makajam,マカジャマ,5 MP,40% chance to inflict Mute on a Single Enemy.,Single Enemy,[Hamsa] (Clear Archetype),"[Barong] (Teal Gacha), [Cu Chulainn] (Yellow Gacha), [Dis]"
 ailment,Makajamaon,マカジャマオン,6 MP,50% chance to inflict Mute on a Single Enemy.,Single Enemy,"[Mastema] (Yellow Archetype), [Titania], [Lailah] (Clear Archetype)",[Bishamonten] (Yellow Gacha)
 ailment,Mamakajam,マハマカジャマ,6 MP,30% chance to inflict Mute on All Enemies.,All Enemies,"[Isis], [Dakini] (Yellow Archetype)","[Yoshitsune] (Red Gacha), [Garuda] (Red Gacha), [Skadi]"
@@ -245,10 +246,10 @@ passive,Null Fire,火炎無効,Passive,Nullify Fire damage,Self,"[Samael] (Teal 
 passive,Null Light,破魔無効,Passive,Nullify Light damage,Self,"[Garuda] (Teal Archetype), [Lilith] (Teal Archetype), [Sleipnir] (Teal Archetype), [Pazuzu] (Teal Archetype), [Orochi] (Teal Archetype), [Kushinada-Hime] (Teal Archetype), [Forneus] (Teal Archetype)",
 passive,Null Elec,電撃無効,Passive,Nullify Elec damage,Self,"[Amaterasu] (Teal Archetype), [Dominion] (Teal Archetype), [Horus] (Teal Archetype), [Kresnik], [Lilim] (Teal Archetype), [Illuyanka] (Teal Archetype), [Makami] (Teal Archetype), [Sparna] (Teal Archetype), [Raijuu] (Teal Archetype)",
 passive,Null Dark,呪殺無効,Passive,Nullify Dark damage,Self,"[Huang Long] (Teal Archetype), [Barong] (Teal Archetype), [Odin] (Teal Archetype), [Anubis] (Teal Archetype), [Ongyo-Ki] (Teal Archetype), [Azrael] (Teal Archetype), [Ganesha] (Teal Archetype), [Kresnik] (Teal Archetype), [Mad Gasser] (Teal Archetype), [Abraxas] (Teal Archetype)",
-passive,Repel Phys,氷結反射,Passive,Repel Phys damage,Self,"[Asherah] (Teal Archetype), [Quetzalcoatl] (Teal Archetype), [Beiji-Weng] (Teal Archetype), [Sarasvati] (Teal Archetype)",
+passive,Repel Phys,氷結反射,Passive,Repel Phys damage,Self,[Quetzalcoatl] (Teal Archetype),
 passive,Repel Force,衝撃反射,Passive,Repel Force damage,Self,"[Long] (Teal Archetype), [Hanuman] (Teal Archetype)",
 passive,Repel Fire,火炎反射,Passive,Repel Fire damage,Self,"[Thor] (Teal Archetype), [Jeanne D'Arc] (Teal Archetype)",
-passive,Repel Ice,氷結反射,Passive,Repel Ice damage,Self,[Mastema] (Teal Archetype),
+passive,Repel Ice,氷結反射,Passive,Repel Ice damage,Self,"[Mastema] (Teal Archetype), [Asherah] (Teal Archetype), [Beiji-Weng] (Teal Archetype), [Sarasvati] (Teal Archetype)",
 passive,Repel Light,破魔反射,Passive,Repel Light damage,Self,"[Alice] (Teal Archetype), [Huang Di] (Teal Archetype), [Beelzebub] (Teal Archetype)",
 passive,Repel Elec,電撃反射,Passive,Repel Elec damage,Self,[Metatron] (Teal Archetype),
 passive,Repel Dark,呪殺反射,Passive,Repel Dark damage,Self,"[Vishnu] (Teal Archetype), [Michael] (Teal Archetype), [Cu Chulainn] (Teal Archetype), [Dantalian] (Teal Archetype), [Mou-Ryo] (Teal Archetype)",
