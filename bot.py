@@ -13,8 +13,8 @@ def demon_name(name):
     name = name.lower().replace("'",'')
     if name == "suzaku":
         name = "feng huang"
-    elif name == "seiryu" or name == "long" or name == "seiryuu":
-        name = "qing long"
+    elif name == "seiryu" or name == "qing long" or name == "seiryuu":
+        name = "long"
     elif name == "kohryu":
         name = "huang long"
     elif name == "koutei":
@@ -315,4 +315,5 @@ async def s(name : str):
     await bot.say(embed=em)
 
 TOKEN = os.getenv('TOKEN')
+
 bot.run(TOKEN)
