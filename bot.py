@@ -184,7 +184,7 @@ url = 'https://raw.githubusercontent.com/grimgal/einherjar-bot/master/dSkills.cs
 c = pd.read_csv(url,encoding='utf-8')
 count = 0
 Skill = collections.namedtuple('Skill','name jp mp description owner learn element target')
-while count < 343:
+while count < 347:
     if isinstance(c['Transferable From'][count], float):
         skill = Skill(name=c['Name'][count],jp=c['JP Name'][count],mp=str(c['Cost'][count]),description=str(c['Description'][count]),\
                       owner=str(c['Learned By'][count]),learn='N/A',element=c['Element'][count],target=c['Target'][count])
@@ -315,5 +315,4 @@ async def s(name : str):
     await bot.say(embed=em)
 
 TOKEN = os.getenv('TOKEN')
-
 bot.run(TOKEN)
