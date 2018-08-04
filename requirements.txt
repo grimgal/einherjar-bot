@@ -1,5 +1,3 @@
-[requires]
-python_full_version = "python-3.6.6"
 discord
 pandas
 texttable
