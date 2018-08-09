@@ -123,7 +123,8 @@ url = 'https://raw.githubusercontent.com/grimgal/einherjar-bot/master/dDemons.cs
 c = pd.read_csv(url)
 count = 0
 Demon = collections.namedtuple('Demon', 'name race grade rarity phys fire ice elec force light dark hp str mag vit agi luk s1 s2 s3 ca cr cy cp ct gr gy gp gt')
-while count < 179:
+# demons row count - 1
+while count < 181:
     demon = Demon(name=c['Name'][count], race=c['Race'][count], grade=str(int(c['Grade'][count])), rarity='☆' * int(c['Rarity'][count]),
     phys=str(c['Phys'][count]), fire=str(c['Fire'][count]), ice=str(c['Ice'][count]),
     elec=str(c['Elec'][count]), force=str(c['Force'][count]), light=str(c['Light'][count]), dark=str(c['Dark'][count]),
@@ -189,8 +190,8 @@ c = pd.read_csv(url, encoding='utf-8')
 count = 0
 Skill = collections.namedtuple('Skill', 'name jp mp description owner learn element target')
 
-# 1 less than total skill count
-while count < 346:
+# skills row count - 1
+while count < 352:
     if isinstance(c['Transferable From'][count], float):
         skill = Skill(name=c['Name'][count], jp=c['JP Name'][count], mp=str(c['Cost'][count]), description=str(c['Description'][count]),
                       owner=str(c['Learned By'][count]), learn='N/A', element=c['Element'][count], target=c['Target'][count])
