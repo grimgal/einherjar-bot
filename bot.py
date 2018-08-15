@@ -191,7 +191,7 @@ count = 0
 Skill = collections.namedtuple('Skill', 'name jp mp description owner learn element target')
 
 # skills row count - 1
-while count < 352:
+while count < 351:
     if isinstance(c['Transferable From'][count], float):
         skill = Skill(name=c['Name'][count], jp=c['JP Name'][count], mp=str(c['Cost'][count]), description=str(c['Description'][count]),
                       owner=str(c['Learned By'][count]), learn='N/A', element=c['Element'][count], target=c['Target'][count])
