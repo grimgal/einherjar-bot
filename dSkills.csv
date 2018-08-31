@@ -126,7 +126,7 @@ ailment,Toxic Cloud,毒ガスブレス,6 MP,30% chance to inflict Poison 2 to 4 
 ailment,Shibaboo,シバブー,5 MP,40% chance to inflict Bind on a Single Enemy.,Single Enemy,"[Yaksini] (Yellow Archetype), [Sandman] (Clear Archetype)",[Shiisaa]
 ailment,Shibabooon,シバブオン,6 MP,50% chance to inflict Bind on a Single Enemy.,Single Enemy,"[Mothman] (Yellow Archetype), [Mou-Ryo]",[Ares] (Purple Gacha)
 ailment,Mahashibaboo,マハシバブー,6 MP,30% chance to inflict Bind on All Enemies.,All Enemies,"[Forneus] (Yellow Archetype), [Mothman], [Pisaca] (Yellow Archetype)","[Barong] (Yellow Gacha), [Yurlungur]"
-ailment,Mahashibabooon,マハシバブオン,7 MP,40% chance to inflict Bind on All Enemies.,All Enemies,,
+ailment,Mahashibabooon,マハシバブオン,7 MP,40% chance to inflict Bind on All Enemies.,All Enemies,[Jikokuten] (Yellow Archetype),[Sleipnir] (Teal Gacha)
 ailment,Binding Cry,バインドボイス,6 MP,30% chance to inflict Bind 2 to 4 times on Random Enemy/ies.,Random Enemy/ies,"[Mastema], [Girimehkala] (Clear Archetype), [Feng Huang] (Yellow Archetype)",[Dantalian] (Red Gacha)
 ailment,Marin Karin,マリンカリン,5 MP,40% chance to inflict Charm on a Single Enemy.,Single Enemy,"[Lilim], [Decarabia] (Clear Archetype)","[Seth] (Red Gacha), [Incubus]"
 ailment,Marin Karion,マリンカリオン,6 MP,50% chance to inflict Charm on a Single Enemy.,Single Enemy,[Kikuri-Hime],[Lucifer] (Teal Gacha)
