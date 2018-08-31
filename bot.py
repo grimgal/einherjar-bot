@@ -7,7 +7,6 @@ import difflib
 import pandas as pd
 from texttable import Texttable
 
-
 # Returns any localized names
 def demon_name(name):
     name = name.lower().replace("'", '')
