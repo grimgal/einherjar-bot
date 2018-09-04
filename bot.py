@@ -121,7 +121,7 @@ demon_names = []
 url = 'https://raw.githubusercontent.com/grimgal/einherjar-bot/master/dDemons.csv'
 c = pd.read_csv(url)
 count = 0
-Demon = collections.namedtuple('Demon', 'name race grade rarity phys fire ice elec force light dark hp str mag vit agi luk s1 s2 s3 ca cr cy cp ct gr gy gp gt')
+Demon = collections.namedtuple('Demon', 'name race grade rarity ai phys fire ice elec force light dark hp str mag vit agi luk s1 s2 s3 ca cr cy cp ct gr gy gp gt patk pdef matk mdef')
 # demons row count - 1
 while count < 181:
     demon = Demon(name=c['Name'][count], race=c['Race'][count], grade=str(int(c['Grade'][count])), rarity='☆' * int(c['Rarity'][count]), ai=c['AI'],
@@ -132,7 +132,7 @@ while count < 181:
     s1=c['Skill 1'][count], s2=c['Skill 2'][count], s3=c['Skill 3'][count],
     ca=c['Clear Archetype'][count], cr=c['Red Archetype'][count], cy=c['Yellow Archetype'][count], cp=c['Purple Archetype'][count], ct=c['Teal Archetype'][count],
     gr=c['Red Gacha'][count], gy=c['Yellow Gacha'][count], gp=c['Purple Gacha'][count], gt=c['Teal Gacha'][count],
-	patk = c['PATK'][count].strip(), pdef = c['PDEF'][count].strip(), matk = c['MATK'][count].strip(), mdef = c['MDEF'][count].strip(), )
+    patk = str(c['PATK'][count]), pdef = str(c['PDEF'][count]), matk = str(c['MATK'][count]), mdef = str(c['MDEF'][count]))
 
     infoTable = Texttable()
     infoTable.set_cols_align(["c", "c", "c"])
@@ -327,7 +327,6 @@ async def s(name: str):
     em.add_field(name="Demons with skill", value=skill.owner)
     em.add_field(name="Demons to transfer skill from", value=skill.learn)
     await bot.say(embed=em)
-
 TOKEN = os.getenv('TOKEN')
 
 bot.run(TOKEN)
