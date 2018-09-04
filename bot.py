@@ -124,7 +124,7 @@ count = 0
 Demon = collections.namedtuple('Demon', 'name race grade rarity ai phys fire ice elec force light dark hp str mag vit agi luk s1 s2 s3 ca cr cy cp ct gr gy gp gt patk pdef matk mdef')
 # demons row count - 1
 while count < 181:
-    demon = Demon(name=c['Name'][count], race=c['Race'][count], grade=str(int(c['Grade'][count])), rarity='☆' * int(c['Rarity'][count]), ai=c['AI'],
+    demon = Demon(name=c['Name'][count], race=c['Race'][count], grade=str(int(c['Grade'][count])), rarity='☆' * int(c['Rarity'][count]), ai=str(c['AI'][count]),
     phys=str(c['Phys'][count]), fire=str(c['Fire'][count]), ice=str(c['Ice'][count]),
     elec=str(c['Elec'][count]), force=str(c['Force'][count]), light=str(c['Light'][count]), dark=str(c['Dark'][count]),
     hp=c['6★ HP'][count].strip(), str=c['6★ Strength'][count].strip(), mag=c['6★ Magic'][count].strip(),
@@ -132,7 +132,7 @@ while count < 181:
     s1=c['Skill 1'][count], s2=c['Skill 2'][count], s3=c['Skill 3'][count],
     ca=c['Clear Archetype'][count], cr=c['Red Archetype'][count], cy=c['Yellow Archetype'][count], cp=c['Purple Archetype'][count], ct=c['Teal Archetype'][count],
     gr=c['Red Gacha'][count], gy=c['Yellow Gacha'][count], gp=c['Purple Gacha'][count], gt=c['Teal Gacha'][count],
-    patk = str(c['PATK'][count]), pdef = str(c['PDEF'][count]), matk = str(c['MATK'][count]), mdef = str(c['MDEF'][count]))
+    patk = str(int(c['PATK'][count])), pdef = str(int(c['PDEF'][count])), matk = str(int(c['MATK'][count])), mdef = str(int(c['MDEF'][count])))
 
     infoTable = Texttable()
     infoTable.set_cols_align(["c", "c", "c"])
@@ -280,8 +280,9 @@ async def d(name):
                  + "\nElec: " + demon.elec + "\nForce: " + demon.force + "\nLight: " + demon.light + "\nDark: " + demon.dark)
     em.add_field(name="6☆ Max Level Stats", value="HP - " + demon.hp + "\nStrength - " + demon.str + "\nMagic - " + demon.mag
                   + "\nVitality - " + demon.vit + "\nAgility - " + demon.agi + "\nLuck - " + demon.luk)
+    
     em.add_field(name="6☆ Combat Stats", value="PATK - " + demon.patk + "\nPDEF- " + demon.pdef + "\nMATK - " + demon.matk + "\nMDEF - " + demon.mdef)
-# ,inline=False
+    
     em.add_field(name="Base Skills", value="Transferable Skill - " + demon.s1.split('|')[0] + "\nInnate Skill 1 - " + demon.s2.split('|')[0] + "\nInnate Skill 2 - " + demon.s3.split('|')[0])
     em.add_field(name="Archetype Skills", value="Common (Clear) - " + demon.ca.split('|')[0]
                  + "\nAragami (Red) - " + demon.cr.split('|')[0] + "\nProtector (Yellow) - " + demon.cy.split('|')[0]
@@ -291,6 +292,7 @@ async def d(name):
     await bot.say(embed=em)
 
 
+# ,inline=False
 # Get skill info (mobile)
 @bot.command()
 async def s(name: str):
@@ -327,6 +329,7 @@ async def s(name: str):
     em.add_field(name="Demons with skill", value=skill.owner)
     em.add_field(name="Demons to transfer skill from", value=skill.learn)
     await bot.say(embed=em)
+
 TOKEN = os.getenv('TOKEN')
 
 bot.run(TOKEN)
