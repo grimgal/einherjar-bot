@@ -191,13 +191,13 @@ count = 0
 Skill = collections.namedtuple('Skill', 'name jp mp description owner learn element target')
 
 # skills row count - 1
-while count < 351:
+while count < 352:
     if isinstance(c['Transferable From'][count], float):
         skill = Skill(name=c['Name'][count], jp=c['JP Name'][count], mp=str(c['Cost'][count]), description=str(c['Description'][count]),
-                      owner=str(c['Learned By'][count]), learn='N/A', element=c['Element'][count], target=c['Target'][count])
+                      owner=str(c['Learned By'][count]), learn='N/A', element=c['Element'][count], target=c['Target'][count], sp=c['Skill Points'][count])
     else:
         skill = Skill(name=c['Name'][count], jp=c['JP Name'][count], mp=str(c['Cost'][count]), description=str(c['Description'][count]),
-                      owner=str(c['Learned By'][count]), learn=c['Transferable From'][count], element=c['Element'][count], target=c['Target'][count])
+                      owner=str(c['Learned By'][count]), learn=c['Transferable From'][count], element=c['Element'][count], target=c['Target'][count], sp=c['Skill Points'][count])
 
     skills[skill.name.lower().replace("'", '')] = "```md\n#" + skill.name + " | " + skill.jp + " | " + skill.mp + " | " + skill.description\
     + "\n\nDemons with skill: " + skill.owner + "\nDemons to transfer skill from: " + skill.learn + "```"
@@ -320,7 +320,7 @@ async def s(name: str):
     elif icon_target == "Random Enemy/ies":
         icon_target = "Random.png"
 
-    em = discord.Embed(description="JP Name: " + skill.jp + "\nMP Cost: " + skill.mp + "\nDescription: " + skill.description, color=0xFFBF00)
+    em = discord.Embed(description="JP Name: " + skill.jp + "\nMP Cost: " + skill.mp + "\nSkill Points: " + skill.sp + "\nDescription: " + skill.description, color=0xFFBF00)
     em.set_author(name=skill.name, icon_url="https://raw.githubusercontent.com/grimgal/einherjar-bot/master/icons/skills/" + icon_name)
     if icon_name == "passive.png":
         em.set_footer(text=skill.target)
