@@ -188,16 +188,16 @@ skill_names = []
 url = 'https://raw.githubusercontent.com/grimgal/einherjar-bot/master/dSkills.csv'
 c = pd.read_csv(url, encoding='utf-8')
 count = 0
-Skill = collections.namedtuple('Skill', 'name jp mp description owner learn element target')
+Skill = collections.namedtuple('Skill', 'name jp mp description owner learn element target sp')
 
 # skills row count - 1
 while count < 352:
     if isinstance(c['Transferable From'][count], float):
         skill = Skill(name=c['Name'][count], jp=c['JP Name'][count], mp=str(c['Cost'][count]), description=str(c['Description'][count]),
-                      owner=str(c['Learned By'][count]), learn='N/A', element=c['Element'][count], target=c['Target'][count], sp=c['Skill Points'][count])
+                      owner=str(c['Learned By'][count]), learn='N/A', element=c['Element'][count], target=c['Target'][count], sp=str(c['Skill Points'][count]))
     else:
         skill = Skill(name=c['Name'][count], jp=c['JP Name'][count], mp=str(c['Cost'][count]), description=str(c['Description'][count]),
-                      owner=str(c['Learned By'][count]), learn=c['Transferable From'][count], element=c['Element'][count], target=c['Target'][count], sp=c['Skill Points'][count])
+                      owner=str(c['Learned By'][count]), learn=c['Transferable From'][count], element=c['Element'][count], target=c['Target'][count], sp=str(int(c['Skill Points'][count])))
 
     skills[skill.name.lower().replace("'", '')] = "```md\n#" + skill.name + " | " + skill.jp + " | " + skill.mp + " | " + skill.description\
     + "\n\nDemons with skill: " + skill.owner + "\nDemons to transfer skill from: " + skill.learn + "```"
