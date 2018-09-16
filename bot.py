@@ -84,8 +84,8 @@ def aether(s, r, i):
             return "5 Medium " + aether_types(s, i) + " Aether"
         elif r == 1:
             return "5 Small " + aether_types(s, i) + " Aether"
-    elif s == "Dragon" or s == "Kishin" or s == "Lady" or s == "Fury" or s == "Haunt" or s == "Tyrant" or s == "Foul" or s == "Avian" or s == "Megami" or s == "Herald" or s == "Vile" or s == "Wilder" or s == "Genma"
-    or s == "Holy" or s == "Avatar" or s == "Deity" or s == "Night" or s == "Femme" or s == "Brute" or s == "Fallen" or s == "Yoma" or s == "Divine":
+    elif s == "Dragon" or s == "Kishin" or s == "Lady" or s == "Fury" or s == "Haunt" or s == "Tyrant" or s == "Foul" or s == "Avian" or s == "Megami" or s == "Herald" or s == "Vile" or s == "Wilder"
+    or s == "Genma" or s == "Holy" or s == "Avatar" or s == "Deity" or s == "Night" or s == "Femme" or s == "Brute" or s == "Fallen" or s == "Yoma" or s == "Divine":
         # Chaotic Good (Red + Yellow)
         if r == 5:
             if i == 1 or i == 2:
