@@ -257,8 +257,8 @@ while count < 182:
     demon = Demon(name=c['Name'][count], race=c['Race'][count], grade=str(int(c['Grade'][count])), rarity='☆' * int(c['Rarity'][count]), ai=str(c['AI'][count]),
     phys=str(c['Phys'][count]), fire=str(c['Fire'][count]), ice=str(c['Ice'][count]),
     elec=str(c['Elec'][count]), force=str(c['Force'][count]), light=str(c['Light'][count]), dark=str(c['Dark'][count]),
-    hp=c['6★ HP'][count].strip(), str=c['6★ Strength'][count].strip(), mag=c['6★ Magic'][count].strip(),
-    vit=c['6★ Vitality'][count].strip(), agi=c['6★ Agility'][count].strip(), luk=c['6★ Luck'][count].strip(),
+    hp=str(c['6★ HP'][count]).strip(), str=str(c['6★ Strength'][count]).strip(), mag=str(c['6★ Magic'][count]).strip(),
+    vit=str(c['6★ Vitality'][count]).strip(), agi=str(c['6★ Agility'][count]).strip(), luk=str(c['6★ Luck'][count]).strip(),
     s1=c['Skill 1'][count], s2=c['Skill 2'][count], s3=c['Skill 3'][count],
     ca=c['Clear Archetype'][count], cr=c['Red Archetype'][count], cy=c['Yellow Archetype'][count], cp=c['Purple Archetype'][count], ct=c['Teal Archetype'][count],
     gr=c['Red Gacha'][count], gy=c['Yellow Gacha'][count], gp=c['Purple Gacha'][count], gt=c['Teal Gacha'][count],
@@ -307,8 +307,8 @@ while count < 182:
     # + "\nPsychic (Purple)    | " + demon.gp.replace('|',' | ') + "\nElementalist (Teal) | " + demon.gt.replace('|',' | ')
     demons[demon.name.lower().replace("'", '')] = demonText + "```"
     demons_mobile[demon.name.lower().replace("'", '')] = demon
-    if len(demonText) > 1900:
-        print(len(demonText))
+    #if len(demonText) > 1900:
+    #    print(len(demonText))
 
     demon_names.append(demon.name)
     count += 1
@@ -411,10 +411,10 @@ async def d(name):
     em.add_field(name="Elemental Resistances", value="Phys: " + demon.phys + "\nFire: " + demon.fire + "\nIce: " + demon.ice
                  + "\nElec: " + demon.elec + "\nForce: " + demon.force + "\nLight: " + demon.light + "\nDark: " + demon.dark)
     em.add_field(name="6☆ Max Level Stats", value="HP - " + demon.hp + "\nStrength - " + demon.str + "\nMagic - " + demon.mag
-                  + "\nVitality - " + demon.vit + "\nAgility - " + demon.agi + "\nLuck - " + demon.luk + "\nAwaken\n" + demon.aether1
-                  + "\n" + demon.aether2 + "\n" + demon.aether3 + "\n" + demon.aether4)
+                  + "\nVitality - " + demon.vit + "\nAgility - " + demon.agi + "\nLuck - " + demon.luk)
 
-    em.add_field(name="6☆ Combat Stats", value="PATK - " + demon.patk + "\nPDEF- " + demon.pdef + "\nMATK - " + demon.matk + "\nMDEF - " + demon.mdef)
+    em.add_field(name="6☆ Combat Stats", value="PATK - " + demon.patk + "\nPDEF- " + demon.pdef + "\nMATK - " + demon.matk + "\nMDEF - " + demon.mdef + "\n---\n" + demon.aether1
+    + "\n" + demon.aether2 + "\n" + demon.aether3 + "\n" + demon.aether4)
 
     em.add_field(name="Base Skills", value="Transferable Skill - " + demon.s1.split('|')[0] + "\nInnate Skill 1 - " + demon.s2.split('|')[0] + "\nInnate Skill 2 - " + demon.s3.split('|')[0])
     em.add_field(name="Archetype Skills", value="Common (Clear) - " + demon.ca.split('|')[0]
