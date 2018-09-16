@@ -7,6 +7,136 @@ import difflib
 import pandas as pd
 from texttable import Texttable
 
+def aether_types(s, i):
+    # Yellow/Purple/Blue/Red
+    if s == "Entity" or s == "Zealot" or s == "Enigma" or s == "UMA" or s == "Rumor" or s == "Hero" or s == "Fiend":
+        if i == 1:
+            return "Light"
+        if i == 2:
+            return "Dark"
+        if i == 3:
+            return "Lawful"
+        if i == 4:
+            return "Chaotic"
+    elif s == "Dragon" or s == "Kishin" or s == "Lady" or s == "Fury":
+        # Chaotic Good (Red + Yellow)
+            if i == 1 or i == 3:
+                return "Chaotic"
+            if i == 2 or i == 4:
+                return "Light"
+    elif s == "Haunt" or s == "Tyrant" or s == "Foul":
+        # Chaotic Evil (Red + Purple)
+            if i == 1 or i == 3:
+                return "Chaotic"
+            if i == 2 or i == 4:
+                return "Dark"
+    elif s == "Avian" or s == "Megami" or s == "Herald":
+        # Lawful Good (Blue + Yellow)
+            if i == 1 or i == 3:
+                return "Lawful"
+            if i == 2 or i == 4:
+                return "Light"
+    elif s == "Vile":
+        # Lawful Evil (Blue + Purple)
+            if i == 1 or i == 3:
+                return "Lawful"
+            if i == 2 or i == 4:
+                return "Dark"
+    elif s == "Wilder":
+        # Neutral Evil (Green + Purple)
+            if i == 1 or i == 3:
+                return "Neutral"
+            if i == 2 or i == 4:
+                return "Dark"
+    elif s == "Genma" or s == "Holy" or s == "Avatar" or s == "Deity":
+        # Neutral Good (Green + Yellow)
+            if i == 1 or i == 3:
+                return "Neutral"
+            if i == 2 or i == 4:
+                return "Light"
+    elif s == "Night" or s == "Femme" or s == "Brute" or s == "Fallen":
+        # Neutral Chaotic (Green + Red)
+            if i == 1 or i == 3:
+                return "Neutral"
+            if i == 2 or i == 4:
+                return "Chaotic"
+    elif s == "Yoma" or s == "Divine":
+        # Neutral Lawful (Green + Blue)
+            if i == 1 or i == 3:
+                return "Neutral"
+            if i == 2 or i == 4:
+                return "Lawful"
+    elif s == "Fairy" or s == "Beast" or s == "Snake":
+        # Neutral (Green)
+            return "Neutral"
+    return ""
+
+def aether(s, r, i):
+    # Yellow/Purple/Blue/Red
+    if s == "Entity" or s == "Zealot" or s == "Enigma" or s == "UMA" or s == "Rumor" or s == "Hero" or s == "Fiend":
+        if r == 5:
+            return "15 Large " + aether_types(s, i) + " Aether"
+        elif r == 4:
+            return "5 Large " + aether_types(s, i) + " Aether"
+        elif r == 3:
+            return "10 Medium " + aether_types(s, i) + " Aether"
+        elif r == 2:
+            return "5 Medium " + aether_types(s, i) + " Aether"
+        elif r == 1:
+            return "5 Small " + aether_types(s, i) + " Aether"
+    elif s == "Dragon" or s == "Kishin" or s == "Lady" or s == "Fury" or s == "Haunt" or s == "Tyrant" or s == "Foul" or s == "Avian" or s == "Megami" or s == "Herald" or s == "Vile" or s == "Wilder" or s == "Genma"
+    or s == "Holy" or s == "Avatar" or s == "Deity" or s == "Night" or s == "Femme" or s == "Brute" or s == "Fallen" or s == "Yoma" or s == "Divine":
+        # Chaotic Good (Red + Yellow)
+        if r == 5:
+            if i == 1 or i == 2:
+                return "20 Medium " + aether_types(s, i) + " Aether"
+            if i == 3 or i == 4:
+                return "15 Large " + aether_types(s, i) + " Aether"
+        elif r == 4:
+            if i == 1 or i == 2:
+                return "15 Medium " + aether_types(s, i) + " Aether"
+            if i == 3 or i == 4:
+                return "5 Large " + aether_types(s, i) + " Aether"
+        elif r == 3:
+            if i == 1 or i == 2:
+                return "5 Small " + aether_types(s, i) + " Aether"
+            if i == 3 or i == 4:
+                return "10 Medium " + aether_types(s, i) + " Aether"
+        elif r == 2:
+            if i == 1 or i == 2:
+                return "10 Medium " + aether_types(s, i) + " Aether"
+            if i == 3 or i == 4:
+                return "5 Medium " + aether_types(s, i) + " Aether"
+        elif r == 1:
+            if i == 1 or i == 2:
+                return "10 Small " + aether_types(s, i) + " Aether"
+    elif s == "Fairy" or s == "Beast" or s == "Snake":
+        # Neutral (Green)
+        if r == 5:
+            if i == 1:
+                return "40 Medium " + aether_types(s, i) + " Aether"
+            if i == 2:
+                return "30 Large " + aether_types(s, i) + " Aether"
+        elif r == 4:
+            if i == 1:
+                return "30 Medium " + aether_types(s, i) + " Aether"
+            if i == 2:
+                return "10 Large " + aether_types(s, i) + " Aether"
+        elif r == 3:
+            if i == 1:
+                return "10 Small " + aether_types(s, i) + " Aether"
+            if i == 2:
+                return "20 Medium " + aether_types(s, i) + " Aether"
+        elif r == 2:
+            if i == 1:
+                return "20 Small " + aether_types(s, i) + " Aether"
+            if i == 2:
+                return "10 Medium " + aether_types(s, i) + " Aether"
+        elif r == 1:
+            if i == 1 or i == 2:
+                return "20 Small " + aether_types(s, i) + " Aether"
+    return ""
+
 # Returns any localized names
 def demon_name(name):
     name = name.lower().replace("'", '')
@@ -121,9 +251,9 @@ demon_names = []
 url = 'https://raw.githubusercontent.com/grimgal/einherjar-bot/master/dDemons.csv'
 c = pd.read_csv(url)
 count = 0
-Demon = collections.namedtuple('Demon', 'name race grade rarity ai phys fire ice elec force light dark hp str mag vit agi luk s1 s2 s3 ca cr cy cp ct gr gy gp gt patk pdef matk mdef')
+Demon = collections.namedtuple('Demon', 'name race grade rarity ai phys fire ice elec force light dark hp str mag vit agi luk s1 s2 s3 ca cr cy cp ct gr gy gp gt patk pdef matk mdef aether1 aether2 aether3 aether4')
 # demons row count - 1
-while count < 181:
+while count < 182:
     demon = Demon(name=c['Name'][count], race=c['Race'][count], grade=str(int(c['Grade'][count])), rarity='☆' * int(c['Rarity'][count]), ai=str(c['AI'][count]),
     phys=str(c['Phys'][count]), fire=str(c['Fire'][count]), ice=str(c['Ice'][count]),
     elec=str(c['Elec'][count]), force=str(c['Force'][count]), light=str(c['Light'][count]), dark=str(c['Dark'][count]),
@@ -132,7 +262,9 @@ while count < 181:
     s1=c['Skill 1'][count], s2=c['Skill 2'][count], s3=c['Skill 3'][count],
     ca=c['Clear Archetype'][count], cr=c['Red Archetype'][count], cy=c['Yellow Archetype'][count], cp=c['Purple Archetype'][count], ct=c['Teal Archetype'][count],
     gr=c['Red Gacha'][count], gy=c['Yellow Gacha'][count], gp=c['Purple Gacha'][count], gt=c['Teal Gacha'][count],
-    patk = str(int(c['PATK'][count])), pdef = str(int(c['PDEF'][count])), matk = str(int(c['MATK'][count])), mdef = str(int(c['MDEF'][count])))
+    patk = str(int(c['PATK'][count])), pdef = str(int(c['PDEF'][count])), matk = str(int(c['MATK'][count])), mdef = str(int(c['MDEF'][count])),
+    aether1=aether(c['Race'][count],int(c['Rarity'][count]),1), aether2=aether(c['Race'][count],int(c['Rarity'][count]),2), aether3=aether(c['Race'][count],int(c['Rarity'][count]),3),
+    aether4=aether(c['Race'][count],int(c['Rarity'][count]),4))
 
     infoTable = Texttable()
     infoTable.set_cols_align(["c", "c", "c"])
@@ -191,7 +323,7 @@ count = 0
 Skill = collections.namedtuple('Skill', 'name jp mp description owner learn element target sp')
 
 # skills row count - 1
-while count < 352:
+while count < 356:
     if isinstance(c['Transferable From'][count], float):
         skill = Skill(name=c['Name'][count], jp=c['JP Name'][count], mp=str(c['Cost'][count]), description=str(c['Description'][count]),
                       owner=str(c['Learned By'][count]), learn='N/A', element=c['Element'][count], target=c['Target'][count], sp=str(c['Skill Points'][count]))
@@ -279,10 +411,11 @@ async def d(name):
     em.add_field(name="Elemental Resistances", value="Phys: " + demon.phys + "\nFire: " + demon.fire + "\nIce: " + demon.ice
                  + "\nElec: " + demon.elec + "\nForce: " + demon.force + "\nLight: " + demon.light + "\nDark: " + demon.dark)
     em.add_field(name="6☆ Max Level Stats", value="HP - " + demon.hp + "\nStrength - " + demon.str + "\nMagic - " + demon.mag
-                  + "\nVitality - " + demon.vit + "\nAgility - " + demon.agi + "\nLuck - " + demon.luk)
-    
+                  + "\nVitality - " + demon.vit + "\nAgility - " + demon.agi + "\nLuck - " + demon.luk + "\nAwaken\n" + demon.aether1
+                  + "\n" + demon.aether2 + "\n" + demon.aether3 + "\n" + demon.aether4)
+
     em.add_field(name="6☆ Combat Stats", value="PATK - " + demon.patk + "\nPDEF- " + demon.pdef + "\nMATK - " + demon.matk + "\nMDEF - " + demon.mdef)
-    
+
     em.add_field(name="Base Skills", value="Transferable Skill - " + demon.s1.split('|')[0] + "\nInnate Skill 1 - " + demon.s2.split('|')[0] + "\nInnate Skill 2 - " + demon.s3.split('|')[0])
     em.add_field(name="Archetype Skills", value="Common (Clear) - " + demon.ca.split('|')[0]
                  + "\nAragami (Red) - " + demon.cr.split('|')[0] + "\nProtector (Yellow) - " + demon.cy.split('|')[0]
