@@ -2839,7 +2839,7 @@ Lv5: +10% to damage.","Media|メディア|6 MP|Heals All Party Members with 25 p
 
 Lv2: +3% to Healing amount.
 Lv3: +6% to Healing amount.
-Lv4: +9% to Healing amount.",Fast Recovery|自然治癒|Passive|+20% to status ailment auto cure rate.,Support,722,574,483,517
+Lv4: +9% to Healing amount.",Fast Recovery|自然治癒|Passive|+20% to status ailment auto cure rate.,Attack,722,574,483,517
 Shiki-Ouji,Brute,49,3,966 (132/182),166 (59/182),187 (44/182),127 (133/182),90 (167/182),118 (149/182),Null,Weak,Weak,-,-,Resist,Resist,Resist Mute|魔封耐性|Passive|Chance of being Muted reduced by 50%.,"Hama|ハマ|4 MP|Inflicts Light (Magic) damage with 120 power on a Single Enemy.
 
 Lv2: +4% to damage.
@@ -2895,7 +2895,7 @@ Lv6: +15% to Healing amount.","Dekunda|デクンダ|5 MP|Remove debuffs from All
 Lv2: +3% chance of 1 MP recovery.
 Lv3: +6% chance of 1 MP recovery.
 Lv4: +9% chance of 1 MP recovery.
-Lv5: +12% chance of 1 MP recovery.","Mahamaon|マハンマオン|6 MP|Inflicts Light (Magic) damage with 100 power on All Enemies.
+Lv5: +12% chance of 1 MP recovery.","Mahama|マハンマ|5 MP|Inflicts Light (Magic) damage with 80 power on All Enemies.
 
 Lv2: +4% to damage.
 Lv3: +6% to damage.
