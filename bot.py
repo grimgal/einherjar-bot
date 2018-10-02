@@ -325,12 +325,12 @@ Skill = collections.namedtuple('Skill', 'name jp mp description owner learn elem
 # skills row count - 1
 while count < 363:
     if isinstance(c['Transferable From'][count], float):
-        skill = Skill(name=c['Name'][count], jp=c['JP Name'][count], mp=str(c['Cost'][count]), description=str(c['Description'][count]),
+        skill = Skill(name=str(c['Name'][count]), jp=str(c['JP Name'][count]), mp=str(c['Cost'][count]), description=str(c['Description'][count]),
                       owner=str(c['Learned By'][count]), learn='N/A', element=c['Element'][count], target=c['Target'][count], sp=str(c['Skill Points'][count]))
     else:
-        skill = Skill(name=c['Name'][count], jp=c['JP Name'][count], mp=str(c['Cost'][count]), description=str(c['Description'][count]),
+        skill = Skill(name=str(c['Name'][count]), jp=str(c['JP Name'][count]), mp=str(c['Cost'][count]), description=str(c['Description'][count]),
                       owner=str(c['Learned By'][count]), learn=c['Transferable From'][count], element=c['Element'][count], target=c['Target'][count], sp=str(int(c['Skill Points'][count])))
-
+        
     skills[skill.name.lower().replace("'", '')] = "```md\n#" + skill.name + " | " + skill.jp + " | " + skill.mp + " | " + skill.description\
     + "\n\nDemons with skill: " + skill.owner + "\nDemons to transfer skill from: " + skill.learn + "```"
     skills_mobile[skill.name.lower().replace("'", '')] = skill
