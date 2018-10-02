@@ -42,7 +42,7 @@ def aether_types(s, i):
                 return "Lawful"
             if i == 2 or i == 4:
                 return "Dark"
-    elif s == "Wilder":
+    elif s == "Wilder" or s == "Jaki":
         # Neutral Evil (Green + Purple)
             if i == 1 or i == 3:
                 return "Neutral"
@@ -253,7 +253,7 @@ c = pd.read_csv(url)
 count = 0
 Demon = collections.namedtuple('Demon', 'name race grade rarity ai phys fire ice elec force light dark hp str mag vit agi luk s1 s2 s3 ca cr cy cp ct gr gy gp gt patk pdef matk mdef aether1 aether2 aether3 aether4')
 # demons row count - 1
-while count < 182:
+while count < 189:
     demon = Demon(name=c['Name'][count], race=c['Race'][count], grade=str(int(c['Grade'][count])), rarity='☆' * int(c['Rarity'][count]), ai=str(c['AI'][count]),
     phys=str(c['Phys'][count]), fire=str(c['Fire'][count]), ice=str(c['Ice'][count]),
     elec=str(c['Elec'][count]), force=str(c['Force'][count]), light=str(c['Light'][count]), dark=str(c['Dark'][count]),
@@ -323,7 +323,7 @@ count = 0
 Skill = collections.namedtuple('Skill', 'name jp mp description owner learn element target sp')
 
 # skills row count - 1
-while count < 356:
+while count < 363:
     if isinstance(c['Transferable From'][count], float):
         skill = Skill(name=c['Name'][count], jp=c['JP Name'][count], mp=str(c['Cost'][count]), description=str(c['Description'][count]),
                       owner=str(c['Learned By'][count]), learn='N/A', element=c['Element'][count], target=c['Target'][count], sp=str(c['Skill Points'][count]))
