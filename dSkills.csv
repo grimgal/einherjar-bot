@@ -12,7 +12,7 @@ Lv2: +5% to damage.
 Lv3: +8% to damage.
 Lv4: +11% to damage.
 Lv5: +14% to damage.
-Lv6: +17% to damage.",Single Enemy,6,"[Power], [Valkyrie], [Eligor] (Red Archetype)","[Titania] (Purple Gacha), [Naga], [Rakshasa]"
+Lv6: +17% to damage.",Single Enemy,6,"[Power], [Valkyrie], [Eligor] (Red Archetype)","[Titania] (Purple Gacha), [Rakshasa], [Naga]"
 phys,Berserker God,怪力乱神,6 MP,"Inflicts Phys (Physical) damage with 160 power on a Single Enemy.
 
 Lv2: +5% to damage.
@@ -39,13 +39,13 @@ phys,Mow Down,なぎ払い,4 MP,"Inflicts Phys (Physical) damage with 80 power o
 Lv2: +4% to damage.
 Lv3: +7% to damage.
 Lv4: +10% to damage.
-Lv5: +13% to damage.",All Enemies,2,"[Eligor], [Ippon-Datara] (Red Archetype)","[Efreet] (Red Gacha), [Arahabaki] (Red Gacha), [Chatterskull] (Red Gacha), [Silky] (Yellow Gacha), [Unicorn] (Teal Gacha), [Momunofu]"
+Lv5: +13% to damage.",All Enemies,2,"[Ippon-Datara] (Red Archetype), [Eligor]","[Efreet] (Red Gacha), [Arahabaki] (Red Gacha), [Chatterskull] (Red Gacha), [Silky] (Yellow Gacha), [Unicorn] (Teal Gacha), [Momunofu]"
 phys,Herculean Strike,金剛発破,5 MP,"Inflicts Phys (Physical) damage with 100 power on All Enemies.
 
 Lv2: +4% to damage.
 Lv3: +7% to damage.
 Lv4: +10% to damage.
-Lv5: +13% to damage.",All Enemies,4,"[Zaou-Gongen] (Red Archetype), [Setanta], [Zouchouten], [Orthrus] (Clear Archetype), [Fomorian], [Suparna], [Oni], [Abraxas] (Red Archetype), [Grendel] (Red Archetype)",[Ares]
+Lv5: +13% to damage.",All Enemies,4,"[Zaou-Gongen] (Red Archetype), [Grendel] (Red Archetype), [Setanta], [Zouchouten], [Orthrus] (Clear Archetype), [Fomorian], [Suparna], [Oni], [Abraxas] (Red Archetype)",[Ares]
 phys,Hades Blast,冥界破,6 MP,"Inflicts Phys (Physical) damage with 120 power on All Enemies.
 
 Lv2: +4% to damage.
@@ -77,7 +77,7 @@ Lv2: +4% to Phys attack hit rate.
 Lv3: +7% to Phys attack hit rate.
 Lv4: +10% to Phys attack hit rate.
 Lv5: +13% to Phys attack hit rate.
-Lv6: +16% to Phys attack hit rate.",Single Enemy,5,"[Zhong Kui], [Wu Kong], [Oni] (Clear Archetype), [Take-Minakata], [Momunofu] (Red Archetype), [Ippon-Datara]","[Ananta] (Teal Gacha), [Setanta]"
+Lv6: +16% to Phys attack hit rate.",Single Enemy,5,"[Zhong Kui], [Wu Kong], [Oni] (Clear Archetype), [Take-Minakata], [Ippon-Datara], [Momunofu] (Red Archetype)","[Ananta] (Teal Gacha), [Setanta]"
 phys,Mortal Jihad,モータルジハード,6 MP,"Inflicts Phys (Physical) damage with 30% crit rate and 145 power on a Single Enemy.
 
 Lv2: +4% to Phys attack hit rate.
@@ -98,7 +98,7 @@ Lv2: +4% to Phys attack hit rate.
 Lv3: +7% to Phys attack hit rate.
 Lv4: +10% to Phys attack hit rate.
 Lv5: +13% to Phys attack hit rate.
-Lv6: +16% to Phys attack hit rate.",All Enemies,4,"[Girimekhala], [King Frost], [Orochi], [Berserker] (Red Archetype), [Ose] (Red Archetype), [Koumokuten] (Clear Archetype), [Kanbari] (Clear Archetype)","[Sphinx] (Yellow Gacha), [Sandalphon] (Teal Gacha), [Hecatoncheires]"
+Lv6: +16% to Phys attack hit rate.",All Enemies,4,"[Girimekhala], [King Frost], [Orochi], [Berserker] (Red Archetype), [Ose] (Red Archetype), [Koumokuten] (Clear Archetype), [Kanbari] (Clear Archetype)","[Sphinx] (Yellow Gacha), [Hecatoncheires], [Sandalphon] (Teal Gacha)"
 phys,Titanomachia,ティタノマキア,7 MP,"Inflicts Phys (Physical) damage with 30% crit rate and 110 power on All Enemies.
 
 Lv2: +4% to Phys attack hit rate.
@@ -171,7 +171,7 @@ Lv3: +4% chance to inflict status ailments.
 Lv4: +6% chance to inflict status ailments.
 Lv5: +8% chance to inflict status ailments.
 Lv6: +10% chance to inflict status ailments.
-Lv7: +16% chance to inflict status ailments.",Single Enemy,6,"[Berserker], [Tam Lin], [Sandman] (Red Archetype), [Rakshasa] (Red Archetype)",[Ongyo-Ki]
+Lv7: +16% chance to inflict status ailments.",Single Enemy,6,"[Rakshasa] (Red Archetype), [Berserker], [Tam Lin], [Sandman] (Red Archetype)",[Ongyo-Ki]
 phys,Sweet Bite,甘噛み,5 MP,"Inflicts Phys (Physical) damage with 120 power on a Single Enemy with 40% chance to inflicts Charm.
 
 Lv2: +2% chance to inflict status ailments.
@@ -193,7 +193,7 @@ Lv2: +3% to damage.
 Lv3: +5% to damage.
 Lv4: +7% to damage.
 Lv5: +9% to damage.
-Lv6: +11% to damage.",Single Enemy,8,"[Dantalian] (Red Archetype), [Girimekhala] (Red Archetype), [Abaddon], [Ammut] (Red Archetype), [Hecatoncheires] (Red Archetype)","[King Frost] (Yellow Gacha), [Sleipnir] (Yellow Gacha)"
+Lv6: +11% to damage.",Single Enemy,8,"[Hecatoncheires] (Red Archetype), [Dantalian] (Red Archetype), [Girimekhala] (Red Archetype), [Abaddon], [Ammut] (Red Archetype)","[King Frost] (Yellow Gacha), [Sleipnir] (Yellow Gacha)"
 phys,Power Hit,捨て身の一撃,7 MP,"Use 10% of own HP to Inflicts Phys (Physical) damage with 170 power on a Single Enemy.
 
 Lv2: +3% to damage.
@@ -255,7 +255,7 @@ fire,Maragion,マハラギオン,6 MP,"Inflicts Fire (Magic) damage with 100 pow
 Lv2: +4% to damage.
 Lv3: +6% to damage.
 Lv4: +8% to damage.
-Lv5: +10% to damage.",All Enemies,6,"[Asherah], [Throne], [Kikuri-Hime], [Abaddon], [Pele] (Red Archetype), [Black Frost] (Clear Archetype)","[Amaterasu], [Hell Biker], [White Rider] (Teal Gacha), [Yatagarasu] (Red Gacha)"
+Lv5: +10% to damage.",All Enemies,6,"[Asherah], [Black Frost] (Clear Archetype), [Throne], [Kikuri-Hime], [Abaddon], [Pele] (Red Archetype)","[Amaterasu], [Hell Biker], [White Rider] (Teal Gacha), [Yatagarasu] (Red Gacha)"
 fire,Maragidyne,マハラギダイン,7 MP,"Inflicts Fire (Magic) damage with 120 power on All Enemies.
 
 Lv2: +4% to damage.
@@ -287,7 +287,7 @@ Lv2: +4% to damage.
 Lv3: +6% to damage.
 Lv4: +8% to damage.
 Lv5: +10% to damage.
-Lv6: +12% to damage.",Single Enemy,1,"[Principality], [Decarabia], [Leanan Sidhe], [Apsaras], [Azumi], [Gremlin]","[Beiji-Weng] (Purple Gacha), [Dominion] (Teal Gacha), [Koumokuten] (Teal Gacha), [Scathach] (Red Gacha), [Lilim] (Yellow Gacha), [Lailah] (Teal Gacha), [Zouchouten] (Teal Gacha), [Jack Frost], [Preta]"
+Lv6: +12% to damage.",Single Enemy,1,"[Principality], [Decarabia], [Leanan Sidhe], [Apsaras], [Gremlin], [Azumi]","[Beiji-Weng] (Purple Gacha), [Dominion] (Teal Gacha), [Koumokuten] (Teal Gacha), [Scathach] (Red Gacha), [Lilim] (Yellow Gacha), [Lailah] (Teal Gacha), [Zouchouten] (Teal Gacha), [Jack Frost], [Preta]"
 ice,Bufula,ブフーラ,5 MP,"Inflicts Ice (Magic) damage with 140 power on a Single Enemy.
 
 Lv2: +4% to damage.
@@ -326,7 +326,7 @@ ice,Mabufudyne,マハブフダイン,7 MP,"Inflicts Ice (Magic) damage with 120 
 Lv2: +4% to damage.
 Lv3: +6% to damage.
 Lv4: +8% to damage.
-Lv5: +10% to damage.",All Enemies,9,"[Ananta] (Red Archetype), [Beiji-Weng] (Red Archetype)","[Rama], [Quetzalcoatl] (Red Gacha), [Black Frost]"
+Lv5: +10% to damage.",All Enemies,9,"[Ananta] (Red Archetype), [Beiji-Weng] (Red Archetype)","[Rama], [Black Frost], [Quetzalcoatl] (Red Gacha)"
 ice,Ice Breath,アイスブレス,4 MP,"Inflicts Ice (Magic) damage 2 to 4 times with 40 power on Random Enemy/ies.
 
 Lv2: +4% to damage.
@@ -346,7 +346,7 @@ Lv2: +4% to damage.
 Lv3: +6% to damage.
 Lv4: +8% to damage.
 Lv5: +10% to damage.
-Lv6: +12% to damage.",Single Enemy,1,"[Nue], [Agathion], [Chagrin]","[Feng Huang] (Teal Gacha), [Setanta] (Yellow Gacha), [Lilim] (Teal Gacha), [Peallaidh] (Red Gacha), [Mad Gasser] (Red Gacha), [Ammut] (Red Gacha), [Forneus] (Purple Gacha), [Baphomet] (Teal Gacha), [Suparna], [Phantom], [Mokoi], [Gremlin]"
+Lv6: +12% to damage.",Single Enemy,1,"[Nue], [Agathion], [Chagrin]","[Feng Huang] (Teal Gacha), [Setanta] (Yellow Gacha), [Lilim] (Teal Gacha), [Peallaidh] (Red Gacha), [Mad Gasser] (Red Gacha), [Ammut] (Red Gacha), [Forneus] (Purple Gacha), [Baphomet] (Teal Gacha), [Suparna], [Gremlin], [Phantom], [Mokoi]"
 elec,Zionga,ジオンガ,5 MP,"Inflicts Elec (Magic) damage with 140 power on a Single Enemy.
 
 Lv2: +4% to damage.
@@ -544,14 +544,14 @@ Lv2: +4% to damage.
 Lv3: +6% to damage.
 Lv4: +8% to damage.
 Lv5: +10% to damage.
-Lv6: +12% to damage.",Single Enemy,6,"[Tsukuyomi] (Red Archetype), [Chatterskull], [Shadow] (Red Archetype), [Pisaca] (Red Archetype), [Incubus], [Leanan Sidhe] (Red Archetype)","[Loki] (Teal Gacha), [Kaiwan], [Kamiotoko], [Ippon-Datara]"
+Lv6: +12% to damage.",Single Enemy,6,"[Tsukuyomi] (Red Archetype), [Chatterskull], [Shadow] (Red Archetype), [Pisaca] (Red Archetype), [Incubus], [Leanan Sidhe] (Red Archetype)","[Loki] (Teal Gacha), [Kaiwan], [Ippon-Datara], [Kamiotoko]"
 dark,Mudodyne,ムドダイン,6 MP,"Inflicts Dark (Magic) damage with 160 power on a Single Enemy.
 
 Lv2: +4% to damage.
 Lv3: +6% to damage.
 Lv4: +8% to damage.
 Lv5: +10% to damage.
-Lv6: +12% to damage.",Single Enemy,9,"[Vishnu] (Clear Archetype), [Alice], [Anubis], [Rangda], [Azrael] (Red Archetype), [Mad Gasser], [Baphomet] (Red Archetype), [Kudlak] (Red Archetype), [Gremlin] (Clear Archetype)","[Lucifer] (Red Gacha), [Beelzebub]"
+Lv6: +12% to damage.",Single Enemy,9,"[Vishnu] (Clear Archetype), [Alice], [Anubis], [Rangda], [Azrael] (Red Archetype), [Kudlak] (Red Archetype), [Mad Gasser], [Baphomet] (Red Archetype), [Gremlin] (Clear Archetype)","[Lucifer] (Red Gacha), [Beelzebub]"
 dark,Hell Gaze,地獄之眼,7 MP,"Inflicts Dark (Magic) damage with 180 power on a Single Enemy.
 
 Lv2: +4% to damage.
@@ -707,7 +707,7 @@ ailment,Mahapoismaon,マハポイズマオン,7 MP,"40% chance to inflict Poison
 
 Lv2: +4% to chance to inflict status ailments.
 Lv3: +7% to chance to inflict status ailments.
-Lv4: +15% to chance to inflict status ailments.",All Enemies,9,[Ananta] (Yellow Archetype),"[Kikuri-Hime] (Yellow Gacha), [Kudlak] (Yellow Gacha)"
+Lv4: +15% to chance to inflict status ailments.",All Enemies,9,[Ananta] (Yellow Archetype),"[Kudlak] (Yellow Gacha), [Kikuri-Hime] (Yellow Gacha)"
 ailment,Toxic Cloud,毒ガスブレス,6 MP,"30% chance to inflict Poison 2 to 4 times on Random Enemy/ies.
 
 Lv2: +4% to chance to inflict status ailments.
@@ -818,7 +818,7 @@ ailment,Mahaju,マハジュ,6 MP,"40% chance to inflict Curse on All Enemies.
 
 Lv2: +4% to chance to inflict status ailments.
 Lv3: +7% to chance to inflict status ailments.
-Lv4: +15% to chance to inflict status ailments.",All Enemies,5,"[Black Ooze] (Yellow Archetype), [Ippon-Datara] (Clear Archetype)",[Mitra]
+Lv4: +15% to chance to inflict status ailments.",All Enemies,5,"[Ippon-Datara] (Clear Archetype), [Black Ooze] (Yellow Archetype)",[Mitra]
 ailment,Mahajuon,マハジュオン,7 MP,"50% chance to inflict Curse on All Enemies.
 
 Lv2: +4% to chance to inflict status ailments.
@@ -852,7 +852,7 @@ ailment,Madezoreton,マハデゾレトオン,7 MP,"70% chance to inflict Weak on
 
 Lv2: +4% to chance to inflict status ailments.
 Lv3: +7% to chance to inflict status ailments.
-Lv4: +15% to chance to inflict status ailments.",All Enemies,9,"[Cerberus] (Yellow Archetype), [Kudlak] (Yellow Archetype)",[Beelzebub] (Red Gacha)
+Lv4: +15% to chance to inflict status ailments.",All Enemies,9,"[Kudlak] (Yellow Archetype), [Cerberus] (Yellow Archetype)",[Beelzebub] (Red Gacha)
 ailment,Outbreak,アウトブレイク,6 MP,"60% chance to inflict Weak 1 to 4 times on Random Enemy/ies.
 
 Lv2: +4% to chance to inflict status ailments.
@@ -929,9 +929,9 @@ recovery,Silent Prayer,静寂の祈り,7 MP,Cures all status ailments of All Par
 recovery,Orlean Prayer,オルレアンの祈り,6 MP,Heals a Single Party Member with 130 power and recovers 3 MP. (6 uses),Single Party Member,,[Jeanne d'Arc],
 recovery,Mother's Creation,母なる創造,8 MP,Revive a Single Party Member with full HP and endows Lydia. (1 use),Single Party Member,,[Asherah],
 recovery,Ce Acatls' Return,セアカトルの再臨,7 MP,Revive All Party Members with full HP. (1 use),All Party Members,,[Quetzalcoatl],
-support,Charge,チャージ,6 MP,Self enters a state of Charge. Increases the next Phys attack damage by 125%.,Self,8,"[Mara] (Yellow Archetype), [Siegfried] (Yellow Archetype), [Thor], [Susano-o] (Yellow Archetype), [Wu Kong] (Clear Archetype), [Ose], [Ares] (Yellow Archetype), [Zouchouten] (Clear Archetype), [Oni] (Yellow Archetype), [Hecatoncheires] (Yellow Archetype), [Rakshasa], [Grendel] (Yellow Archetype), [Gremlin]",[Berserker]
+support,Charge,チャージ,6 MP,Self enters a state of Charge. Increases the next Phys attack damage by 125%.,Self,8,"[Mara] (Yellow Archetype), [Siegfried] (Yellow Archetype), [Thor], [Susano-o] (Yellow Archetype), [Hecatoncheires] (Yellow Archetype), [Wu Kong] (Clear Archetype), [Rakshasa], [Ose], [Grendel] (Yellow Archetype), [Ares] (Yellow Archetype), [Zouchouten] (Clear Archetype), [Oni] (Yellow Archetype), [Gremlin]",[Berserker]
 support,Rebellion,リベリオン,6 MP,Self enters a state of Might. The next Phys attack will have a Critical effect.,Self,8,"[Shiva] (Yellow Archetype), [Zaou-Gongen] (Yellow Archetype), [Siegfried], [Thor] (Yellow Archetype), [Cu Chulainn] (Clear Archetype), [Berserker] (Yellow Archetype), [Kresnik] (Yellow Archetype), [Power] (Yellow Archetype), [Fomorian] (Yellow Archetype), [Naga] (Clear Archetype)",[Ammut]
-support,Concentrate,コンセントレイト,6 MP,Self enters a state of Concentrate. Increases the next Mag attack damage by 125%.,Self,8,"[Ishtar] (Yellow Archetype), [Quetzalcoatl] (Yellow Archetype), [King Frost] (Yellow Archetype), [Long] (Yellow Archetype), [Arahabaki], [Baihu] (Yellow Archetype), [Virtue] (Yellow Archetype), [Peallaidh] (Yellow Archetype), [Black Frost] (Yellow Archetype)","[Trumpeter], [Rama] (Yellow Gacha)"
+support,Concentrate,コンセントレイト,6 MP,Self enters a state of Concentrate. Increases the next Mag attack damage by 125%.,Self,8,"[Ishtar] (Yellow Archetype), [Black Frost] (Yellow Archetype), [Quetzalcoatl] (Yellow Archetype), [King Frost] (Yellow Archetype), [Long] (Yellow Archetype), [Arahabaki], [Baihu] (Yellow Archetype), [Virtue] (Yellow Archetype), [Peallaidh] (Yellow Archetype)","[Trumpeter], [Rama] (Yellow Gacha)"
 support,Discord,ディスコード,3 MP,"Removes Charge, Concentrate and Might from All Enemies.",All Enemies,6,"[Bishamonten] (Yellow Archetype), [Apis] (Yellow Archetype), [Preta] (Yellow Archetype)",[Chatterskull]
 support,Tetrakarn,テトラカーン,7 MP,All Party Members repels Physical damage for 1 turn.,All Party Members,8,"[Yoshitsune] (Yellow Archetype), [Samael] (Yellow Archetype), [Anubis] (Yellow Archetype), [Ose] (Yellow Archetype)",[Azrael]
 support,Makarakarn,マカラカーン,7 MP,All Party Members repels Magic damage for 1 turn.,All Party Members,8,"[Lakshmi] (Yellow Archetype), [Oberon] (Clear Archetype), [Azrael] (Clear Archetype), [Pallas Athena] (Clear Archetype), [Arahabaki], [Makara] (Yellow Archetype)",[Dantalian]
@@ -943,7 +943,7 @@ support,Tarukaja,タルカジャ,5 MP,"Increases ATK of All Party Members by 20%
 Lv2: +3% chance of 1 MP recovery.
 Lv3: +6% chance of 1 MP recovery.
 Lv4: +9% chance of 1 MP recovery.
-Lv5: +12% chance of 1 MP recovery.",All Party Members,6,"[Odin] (Yellow Archetype), [Bishamonten] (Clear Archetype), [Setanta] (Yellow Archetype), [Shadow] (Clear Archetype), [Abraxas], [Cu Sith] (Yellow Archetype), [Ippon-Datara] (Yellow Archetype)","[Trumpeter] (Red Gacha), [Oberon] (Purple Gacha), [Apis], [Archangel]"
+Lv5: +12% chance of 1 MP recovery.",All Party Members,6,"[Odin] (Yellow Archetype), [Bishamonten] (Clear Archetype), [Setanta] (Yellow Archetype), [Shadow] (Clear Archetype), [Abraxas], [Ippon-Datara] (Yellow Archetype), [Cu Sith] (Yellow Archetype)","[Trumpeter] (Red Gacha), [Oberon] (Purple Gacha), [Apis], [Archangel]"
 support,Rakukaja,ラクカジャ,5 MP,"Increases DEF of All Party Members by 20% for 3 turns.
 
 Lv2: +3% chance of 1 MP recovery.
@@ -998,7 +998,7 @@ support,Acid Breath,溶解ブレス,6 MP,"Reduces DEF and EV/AC of All Enemies b
 Lv2: +3% chance of 1 MP recovery.
 Lv3: +6% chance of 1 MP recovery.
 Lv4: +9% chance of 1 MP recovery.
-Lv5: +12% chance of 1 MP recovery.",All Enemies,8,"[Vetala] (Yellow Archetype), [Illuyanka] (Yellow Archetype)","[Yurlungur] (Red Gacha), [Hecatoncheires] (Purple Gacha)"
+Lv5: +12% chance of 1 MP recovery.",All Enemies,8,"[Vetala] (Yellow Archetype), [Illuyanka] (Yellow Archetype)","[Hecatoncheires] (Purple Gacha), [Yurlungur] (Red Gacha)"
 support,Fog Breath,フォッグブレス,6 MP,"Reduces ATK and EV/AC of All Enemies by 20% for 3 turns.
 
 Lv2: +3% chance of 1 MP recovery.
@@ -1010,7 +1010,7 @@ support,Taunt,挑発,3 MP,"Increases ATK and reduces of DEF of All Enemies by 20
 Lv2: +3% chance of 1 MP recovery.
 Lv3: +6% chance of 1 MP recovery.
 Lv4: +9% chance of 1 MP recovery.
-Lv5: +12% chance of 1 MP recovery.",All Enemies,8,"[Ganesha] (Yellow Archetype), [Wu Kong], [Hanuman] (Yellow Archetype), [Zouchouten] (Yellow Archetype), [Rakshasa] (Yellow Archetype)",[Dantalian] (Purple Gacha)
+Lv5: +12% chance of 1 MP recovery.",All Enemies,8,"[Ganesha] (Yellow Archetype), [Wu Kong], [Rakshasa] (Yellow Archetype), [Hanuman] (Yellow Archetype), [Zouchouten] (Yellow Archetype)",[Dantalian] (Purple Gacha)
 support,Debilitate,ランダマイザ,8 MP,"Reduces ATK, DEF, and EV/AC of All Enemies by 20% for 3 turns.",All Enemies,15,[Seth],
 support,Barrier,バリア,4 MP,"Casts a Barrier on a Single Party Member, granting immunity to all status ailments for 3 turns.",Single Party Member,8,"[Beiji-Weng] (Yellow Archetype), [Sarasvati], [Orochi] (Clear Archetype), [Kinmamon], [Virtue] (Clear Archetype)",[Sphinx]
 support,Barrier Break,バリアコワース,3 MP,Remove Barrier from All Enemies.,All Enemies,6,"[Mitra], [Mad Gasser] (Yellow Archetype), [Dis] (Yellow Archetype), [Shiisaa] (Yellow Archetype), [Raijuu] (Yellow Archetype)",[Dakini]
@@ -1031,7 +1031,7 @@ support,Pandemic Bomb,,5 MP,"Remove buffs from All Enemies, then reduces ATK or 
 Lv2: 10% chance of 1 MP recovery.
 Lv3: 20% chance of 1 MP recovery.
 Lv4: 20% chance of 1 MP recovery. MP cost -1.",All Enemies,,[Kudlak],
-passive,Phys Boost,物理ブースタ,Passive,+15% to Phys damage.,Self,6,"[Yatagarasu] (Clear Archetype), [Ganesha] (Purple Archetype), [Valkyrie]","[Wu Kong], [Hecatoncheires] (Red Gacha)"
+passive,Phys Boost,物理ブースタ,Passive,+15% to Phys damage.,Self,6,"[Yatagarasu] (Clear Archetype), [Ganesha] (Purple Archetype), [Valkyrie]","[Hecatoncheires] (Red Gacha), [Wu Kong]"
 passive,Fire Boost,火炎ブースタ,Passive,+15% to Fire damage.,Self,6,[Efreet],[Prometheus]
 passive,Ice Boost,氷結ブースタ,Passive,+15% to Ice damage.,Self,6,"[Gui Xian], [Forneus] (Purple Archetype)","[Beiji-Weng], [King Frost]"
 passive,Elec Boost,電撃ブースタ,Passive,+15% to Elec damage.,Self,6,"[Baihu], [Take-Minakata] (Clear Archetype)","[Lucifer] (Purple Gacha), [Titania]"
@@ -1054,17 +1054,17 @@ passive,Ice Pierce,氷結貫通       ,Passive,Ice attacks bypass resistances,,,
 passive,Elec Pierce,電撃貫通,Passive,Elec attacks bypass resistances,Self,32,[Thor] (Purple Archetype),
 passive,Force Pierce,衝撃貫通,Passive,Force attacks bypass resistances,Self,32,[Cu Chulainn] (Purple Archetype),
 passive,Resist Phys,物理耐性,Passive,Adds Phys Resist.,Self,12,"[Trumpeter] (Teal Archetype), [Zhong Kui] (Teal Archetype), [Yatagarasu] (Teal Archetype), [Titania] (Teal Archetype), [Cerberus] (Teal Archetype), [Feng Huang] (Teal Archetype), [Koumokuten] (Teal Archetype), [Baihu] (Teal Archetype), [Gui Xian] (Teal Archetype), [Ares] (Teal Archetype), [Pele] (Teal Archetype), [Yaksini] (Teal Archetype), [Archangel] (Teal Archetype), [Nue] (Teal Archetype), [Melchom] (Teal Archetype)","[Beelzebub] (Yellow Gacha), [Hanuman]"
-passive,Resist Fire,火炎耐性,Passive,Adds Fire Resist.,Self,8,"[Seth] (Teal Archetype), [Yurlungur] (Teal Archetype), [Skadi] (Teal Archetype), [King Frost] (Teal Archetype), [Vetala] (Teal Archetype), [Makara] (Teal Archetype), [Tam Lin] (Teal Archetype), [Patrimpas] (Teal Archetype), [Legion] (Teal Archetype), [Kurama Tengu] (Teal Archetype), [Heqet] (Teal Archetype), [Nozuchi] (Teal Archetype), [Obariyon] (Teal Archetype), [Koppa Tengu] (Teal Archetype), [Cu Sith] (Teal Archetype), [Gremlin] (Purple Archetype)","[Trumpeter] (Teal Gacha), [Pazuzu], [Kikuri-Hime] (Red Gacha)"
+passive,Resist Fire,火炎耐性,Passive,Adds Fire Resist.,Self,8,"[Seth] (Teal Archetype), [Yurlungur] (Teal Archetype), [Skadi] (Teal Archetype), [King Frost] (Teal Archetype), [Vetala] (Teal Archetype), [Makara] (Teal Archetype), [Tam Lin] (Teal Archetype), [Patrimpas] (Teal Archetype), [Legion] (Teal Archetype), [Kurama Tengu] (Teal Archetype), [Heqet] (Teal Archetype), [Nozuchi] (Teal Archetype), [Gremlin] (Purple Archetype), [Obariyon] (Teal Archetype), [Koppa Tengu] (Teal Archetype), [Cu Sith] (Teal Archetype)","[Trumpeter] (Teal Gacha), [Pazuzu], [Kikuri-Hime] (Red Gacha)"
 passive,Resist Ice,氷結耐性,Passive,Adds Ice Resist.,Self,8,"[Oberon] (Teal Archetype), [Dakini] (Teal Archetype), [Shiki-Ouji] (Teal Archetype), [Ammut] (Teal Archetype), [Unicorn] (Teal Archetype), [Kaiwan] (Teal Archetype), [Shadow] (Teal Archetype), [Shiisaa] (Teal Archetype), [Pisaca] (Teal Archetype), [Hamsa] (Teal Archetype), [Decarabia] (Teal Archetype), [Incubus] (Teal Archetype), [Nekomata] (Teal Archetype), [Sandman] (Teal Archetype)","[Yoshitsune] (Teal Gacha), [Garuda] (Teal Gacha), [Sphinx] (Purple Gacha), [Odin], [Throne] (Yellow Gacha)"
 passive,Resist Elec,電撃耐性,Passive,Adds Elec Resist.,Self,8,"[Efreet] (Teal Archetype), [Scathach] (Teal Archetype), [Setanta] (Teal Archetype), [Jatayu] (Teal Archetype), [Lailah] (Teal Archetype), [Forneus] (Clear Archetype), [Valkyrie] (Teal Archetype), [Orthrus] (Teal Archetype), [Angel] (Teal Archetype), [Apsaras] (Teal Archetype), [Phantom] (Teal Archetype), [Jack Frost] (Teal Archetype)","[Mastema] (Teal Gacha), [Beelzebub] (Teal Gacha), [Prometheus] (Red Gacha), [Skadi] (Teal Gacha), [Throne]"
-passive,Resist Force,衝撃耐性,Passive,Adds Force Resist.,Self,8,"[Girimekhala] (Teal Archetype), [Sandalphon] (Teal Archetype), [Fenrir] (Teal Archetype), [Mitra] (Teal Archetype), [Chimera] (Teal Archetype), [Chatterskull] (Teal Archetype), [Power] (Teal Archetype), [Dis] (Teal Archetype), [Oni] (Teal Archetype), [Shikome] (Teal Archetype), [Blob] (Teal Archetype), [Momunofu] (Teal Archetype), [Pyro Jack] (Teal Archetype), [Leanan Sidhe] (Teal Archetype), [Preta] (Teal Archetype), [Azumi] (Teal Archetype), [Slime] (Teal Archetype), [Grendel] (Teal Archetype)","[Bishamonten] (Teal Gacha), [Pallas Athena]"
-passive,Resist Light,破魔耐性,Passive,Adds Light Resist.,Self,8,"[Loki] (Teal Archetype), [Succubus] (Teal Archetype), [Peallaidh] (Teal Archetype), [Ikusa] (Teal Archetype), [Baphomet] (Teal Archetype), [Fomorian] (Teal Archetype), [High Pixie] (Teal Archetype), [Eligor] (Teal Archetype), [Bicorn] (Teal Archetype), [Pixie] (Teal Archetype), [Ippon-Datara] (Teal Archetype)","[Cu Chulainn] (Teal Gacha), [Bishamonten], [Beiji-Weng] (Red Gacha), [Black Frost] (Teal Gacha), [Hecatoncheires] (Teal Gacha), [Kudlak] (Teal Gacha)"
+passive,Resist Force,衝撃耐性,Passive,Adds Force Resist.,Self,8,"[Girimekhala] (Teal Archetype), [Sandalphon] (Teal Archetype), [Fenrir] (Teal Archetype), [Mitra] (Teal Archetype), [Grendel] (Teal Archetype), [Chimera] (Teal Archetype), [Chatterskull] (Teal Archetype), [Power] (Teal Archetype), [Dis] (Teal Archetype), [Oni] (Teal Archetype), [Shikome] (Teal Archetype), [Blob] (Teal Archetype), [Momunofu] (Teal Archetype), [Pyro Jack] (Teal Archetype), [Leanan Sidhe] (Teal Archetype), [Preta] (Teal Archetype), [Azumi] (Teal Archetype), [Slime] (Teal Archetype)","[Bishamonten] (Teal Gacha), [Pallas Athena]"
+passive,Resist Light,破魔耐性,Passive,Adds Light Resist.,Self,8,"[Loki] (Teal Archetype), [Succubus] (Teal Archetype), [Peallaidh] (Teal Archetype), [Ikusa] (Teal Archetype), [Baphomet] (Teal Archetype), [Fomorian] (Teal Archetype), [Ippon-Datara] (Teal Archetype), [High Pixie] (Teal Archetype), [Eligor] (Teal Archetype), [Bicorn] (Teal Archetype), [Pixie] (Teal Archetype)","[Cu Chulainn] (Teal Gacha), [Black Frost] (Teal Gacha), [Hecatoncheires] (Teal Gacha), [Bishamonten], [Beiji-Weng] (Red Gacha), [Kudlak] (Teal Gacha)"
 passive,Resist Dark,呪殺耐性,Passive,Adds Dark Resist.,Self,8,"[Bishamonten] (Teal Archetype), [Kikuri-Hime] (Teal Archetype), [Apis] (Teal Archetype), [Zouchouten] (Teal Archetype), [Principality] (Teal Archetype), [Kelpie] (Teal Archetype), [Take-Minakata] (Teal Archetype), [Inugami] (Teal Archetype), [Mokoi] (Teal Archetype), [Agathion] (Teal Archetype), [Chagrin] (Teal Archetype)","[Hell Biker] (Teal Gacha), [Girimekhala], [Fenrir] (Red Gacha)"
 passive,Null Phys,物理無効,Passive,Adds Phys Null.,Self,18,"[Wu Kong] (Teal Archetype), [Abaddon] (Teal Archetype), [Ose] (Teal Archetype)",[Huang Di] (Yellow Gacha)
-passive,Null Fire,火炎無効,Passive,Adds Fire Null.,Self,12,"[Samael] (Teal Archetype), [Gucumatz] (Teal Archetype), [Jikokuten] (Teal Archetype), [Pallas Athena] (Teal Archetype), [Mothman] (Teal Archetype), [Black Ooze] (Teal Archetype), [Black Frost] (Teal Archetype)",
+passive,Null Fire,火炎無効,Passive,Adds Fire Null.,Self,12,"[Samael] (Teal Archetype), [Black Frost] (Teal Archetype), [Gucumatz] (Teal Archetype), [Jikokuten] (Teal Archetype), [Pallas Athena] (Teal Archetype), [Mothman] (Teal Archetype), [Black Ooze] (Teal Archetype)",
 passive,Null Ice,氷結無効,Passive,Adds Ice Null.,Self,12,"[Mara] (Teal Archetype), [Surt] (Teal Archetype), [Sphinx] (Teal Archetype), [Throne] (Teal Archetype), [Berserker] (Teal Archetype), [Arahabaki] (Teal Archetype), [Virtue] (Teal Archetype), [Horkos] (Teal Archetype), [Arianrhod] (Teal Archetype), [Mermaid] (Teal Archetype), [Naga] (Teal Archetype)",
 passive,Null Elec,電撃無効,Passive,Adds Elec Null.,Self,12,"[Amaterasu] (Teal Archetype), [Dominion] (Teal Archetype), [Horus] (Teal Archetype), [Kresnik], [Lilim] (Teal Archetype), [Makami] (Teal Archetype), [Suparna] (Teal Archetype), [Raijuu] (Teal Archetype)",
-passive,Null Force,衝撃無効,Passive,Adds Force Null.,Self,12,"[Lakshmi] (Teal Archetype), [Siegfried] (Teal Archetype), [Ishtar] (Teal Archetype), [White Rider] (Teal Archetype), [Rangda] (Teal Archetype), [Isis] (Teal Archetype), [Illuyanka] (Teal Archetype), [Silky] (Teal Archetype), [Hathor] (Teal Archetype), [Rakshasa] (Teal Archetype)",
+passive,Null Force,衝撃無効,Passive,Adds Force Null.,Self,12,"[Lakshmi] (Teal Archetype), [Siegfried] (Teal Archetype), [Ishtar] (Teal Archetype), [White Rider] (Teal Archetype), [Rangda] (Teal Archetype), [Rakshasa] (Teal Archetype), [Isis] (Teal Archetype), [Illuyanka] (Teal Archetype), [Silky] (Teal Archetype), [Hathor] (Teal Archetype)",
 passive,Null Light,破魔無効,Passive,Adds Light Null.,Self,12,"[Garuda] (Teal Archetype), [Lilith] (Teal Archetype), [Sleipnir] (Teal Archetype), [Pazuzu] (Teal Archetype), [Orochi] (Teal Archetype), [Kushinada] (Teal Archetype), [Forneus] (Teal Archetype)",
 passive,Null Dark,呪殺無効,Passive,Adds Dark Null.,Self,12,"[Huang Long] (Teal Archetype), [Barong] (Teal Archetype), [Odin] (Teal Archetype), [Anubis] (Teal Archetype), [Ongyo-Ki] (Teal Archetype), [Azrael] (Teal Archetype), [Ganesha] (Teal Archetype), [Kresnik] (Teal Archetype), [Mad Gasser] (Teal Archetype), [Abraxas] (Teal Archetype)",
 passive,Repel Phys,氷結反射,Passive,Adds Phys Repel.,Self,24,[Quetzalcoatl] (Teal Archetype),
@@ -1094,7 +1094,7 @@ passive,Null Curse,呪い無効,Passive,Adds Null Curse.,Self,12,"[Beiji-Weng] (
 passive,Null Weak,虚弱無効,Passive,Adds Null Weak.,Self,12,"[Vishnu] (Purple Archetype), [Silky], [Makara] (Clear Archetype)",[Lakshmi] (Purple Gacha)
 passive,Speedster,スピードスター,Passive,+50% to Battle Speed of this demon.,Self,10,"[Huang Long] (Purple Archetype), [Hell Biker], [Yatagarasu], [Sleipnir], [Fenrir] (Purple Archetype), [Hamsa] (Purple Archetype)","[Kama], [Rakshasa] (Teal Gacha)"
 passive,Good Aim,百発百中,Passive,+10% to Phys hit rate.,Self,4,"[Naga], [Archangel] (Purple Archetype), [Nozuchi] (Purple Archetype), [Preta] (Purple Archetype)","[White Rider] (Yellow Gacha), [Isis] (Yellow Gacha), [Kresnik] (Teal Gacha)"
-passive,Great Aim,千発千中,Passive,+20% to Phys hit rate.,Self,16,"[Odin] (Purple Archetype), [Setanta], [Arianrhod] (Purple Archetype), [Grendel] (Purple Archetype)",
+passive,Great Aim,千発千中,Passive,+20% to Phys hit rate.,Self,16,"[Odin] (Purple Archetype), [Grendel] (Purple Archetype), [Setanta], [Arianrhod] (Purple Archetype)",
 passive,Dragon Sense,龍の反応,Passive,+15% to Phys hit rate and +15% Phys evasion rate.,Self,,"[Long], [Illuyanka]",
 passive,Dodge,見切り,Passive,+10% Phys evasion rate.,Self,4,"[Shikome] (Purple Archetype), [Obariyon] (Purple Archetype)","[Illuyanka] (Yellow Gacha), [Mothman] (Purple Gacha)"
 passive,Evade,寸分の見切り,Passive,+20% Phys evasion rate.,Self,16,"[Shiva] (Purple Archetype), [Yatagarasu] (Purple Archetype), [Throne] (Purple Archetype)",[Garuda] (Purple Gacha)
@@ -1107,15 +1107,15 @@ passive,Infernal Mask,奈落のマスク,Passive,-60% chance of receiving status
 passive,Mutant,マレビト,Passive,Becomes immune to all status ailments.,Self,,[Kinmamon],
 passive,Fast Recovery,自然治癒,Passive,+20% to status ailment auto cure rate.,Self,8,"[Kushinada] (Purple Archetype), [Patrimpas] (Clear Archetype)","[Tsukuyomi] (Yellow Gacha), [Vetala] (Teal Gacha), [Scathach] (Purple Gacha), [Chimera] (Teal Gacha), [Horkos] (Teal Gacha), [Power] (Teal Gacha), [Tam Lin]"
 passive,Epic Recovery,超自然治癒,Passive,+30% to status ailment auto cure rate.,Self,16,[Sandman] (Purple Archetype),[Alice] (Yellow Gacha)
-passive,Bloody Glee,コロシの愉悦,Passive,+15% to Critical hit rate.,Self,8,"[Abaddon] (Purple Archetype), [Ares] (Purple Archetype), [Oni] (Purple Archetype), [Hecatoncheires]","[Loki] (Red Gacha), [Beelzebub] (Purple Gacha), [Feng Huang] (Red Gacha), [Koumokuten] (Purple Gacha), [Silky] (Red Gacha), [Kaiwan] (Purple Gacha)"
+passive,Bloody Glee,コロシの愉悦,Passive,+15% to Critical hit rate.,Self,8,"[Hecatoncheires], [Abaddon] (Purple Archetype), [Ares] (Purple Archetype), [Oni] (Purple Archetype)","[Loki] (Red Gacha), [Beelzebub] (Purple Gacha), [Feng Huang] (Red Gacha), [Koumokuten] (Purple Gacha), [Silky] (Red Gacha), [Kaiwan] (Purple Gacha)"
 passive,Savage Glee,ミナゴロシの愉悦,Passive,+25% to Critical hit rate.,Self,14,"[Girimekhala] (Purple Archetype), [Ikusa] (Purple Archetype)","[Yoshitsune] (Purple Gacha), [Cu Chulainn], [Sarasvati] (Purple Gacha), [Orochi] (Teal Gacha)"
-passive,Wild Guess,野生の勘,Passive,-15% to Critical hit rate of damage received.,Self,8,"[Gucumatz] (Clear Archetype), [Jatayu] (Purple Archetype), [Kelpie] (Purple Archetype), [Koppa Tengu] (Purple Archetype)","[Throne] (Teal Gacha), [Berserker] (Teal Gacha), [Dakini] (Teal Gacha), [Illuyanka] (Teal Gacha), [Horkos] (Purple Gacha), [Silky] (Teal Gacha), [Baphomet] (Purple Gacha), [Grendel] (Teal Gacha)"
+passive,Wild Guess,野生の勘,Passive,-15% to Critical hit rate of damage received.,Self,8,"[Gucumatz] (Clear Archetype), [Jatayu] (Purple Archetype), [Kelpie] (Purple Archetype), [Koppa Tengu] (Purple Archetype)","[Throne] (Teal Gacha), [Berserker] (Teal Gacha), [Dakini] (Teal Gacha), [Grendel] (Teal Gacha), [Illuyanka] (Teal Gacha), [Horkos] (Purple Gacha), [Silky] (Teal Gacha), [Baphomet] (Purple Gacha)"
 passive,Wild Instinct,野獣の勘,Passive,-25% to Critical hit rate of damage received.,Self,14,"[Beelzebub] (Clear Archetype), [King Frost] (Clear Archetype), [Sandalphon] (Purple Archetype)","[Alice] (Purple Gacha), [Azrael] (Purple Gacha), [Succubus] (Purple Gacha)"
 passive,Life Bonus,一分の活泉,Passive,+10% to Max HP.,Self,3,"[Cu Sith] (Purple Archetype), [Azumi] (Purple Archetype), [Slime]",[Nozuchi]
-passive,Life Gain,二分の活泉,Passive,+20% to Max HP.,Self,7,"[Tsukuyomi] (Purple Archetype), [Cerberus] (Clear Archetype), [Scathach] (Clear Archetype), [Fomorian] (Purple Archetype), [Naga] (Purple Archetype), [Heqet] (Purple Archetype), [Grendel] (Clear Archetype)",
-passive,Life Surge,三分の活泉,Passive,+30% to Max HP.,Self,15,"[Jikokuten] (Purple Archetype), [Apis] (Purple Archetype), [Makara] (Purple Archetype), [Valkyrie] (Purple Archetype), [Hecatoncheires] (Purple Archetype)",
-passive,Mana Bonus,一分の魔脈,Passive,+1 to max MP.,Self,8,"[Mothman] (Clear Archetype), [Take-Minakata] (Purple Archetype), [Hathor] (Purple Archetype), [Pyro Jack] (Purple Archetype), [Melchom] (Purple Archetype), [Gremlin] (Yellow Archetype)","[Tsukuyomi], [Yatagarasu] (Yellow Gacha)"
-passive,Mana Gain,二分の魔脈,Passive,+2 to max MP.,Self,15,"[Metatron] (Purple Archetype), [Lakshmi] (Clear Archetype), [Mastema] (Clear Archetype), [Dantalian] (Clear Archetype), [Titania] (Clear Archetype), [Isis] (Clear Archetype), [Horus] (Clear Archetype), [Baphomet] (Clear Archetype), [Kudlak] (Clear Archetype)",
+passive,Life Gain,二分の活泉,Passive,+20% to Max HP.,Self,7,"[Tsukuyomi] (Purple Archetype), [Cerberus] (Clear Archetype), [Grendel] (Clear Archetype), [Scathach] (Clear Archetype), [Fomorian] (Purple Archetype), [Naga] (Purple Archetype), [Heqet] (Purple Archetype)",
+passive,Life Surge,三分の活泉,Passive,+30% to Max HP.,Self,15,"[Hecatoncheires] (Purple Archetype), [Jikokuten] (Purple Archetype), [Apis] (Purple Archetype), [Makara] (Purple Archetype), [Valkyrie] (Purple Archetype)",
+passive,Mana Bonus,一分の魔脈,Passive,+1 to max MP.,Self,8,"[Mothman] (Clear Archetype), [Take-Minakata] (Purple Archetype), [Hathor] (Purple Archetype), [Pyro Jack] (Purple Archetype), [Gremlin] (Yellow Archetype), [Melchom] (Purple Archetype)","[Tsukuyomi], [Yatagarasu] (Yellow Gacha)"
+passive,Mana Gain,二分の魔脈,Passive,+2 to max MP.,Self,15,"[Metatron] (Purple Archetype), [Lakshmi] (Clear Archetype), [Mastema] (Clear Archetype), [Dantalian] (Clear Archetype), [Kudlak] (Clear Archetype), [Titania] (Clear Archetype), [Isis] (Clear Archetype), [Horus] (Clear Archetype), [Baphomet] (Clear Archetype)",
 passive,Strength Amp I,初段の剛力,Passive,+5 to Strength.,Self,3,"[Yaksini] (Purple Archetype), [Nue] (Purple Archetype), [Mokoi] (Purple Archetype)","[Isis] (Red Gacha), [Gui Xian] (Yellow Gacha), [Zouchouten] (Yellow Gacha)"
 passive,Strength Amp II,二段の剛力,Passive,+10 to Strength.,Self,13,[Ose] (Purple Archetype),[Skadi] (Yellow Gacha)
 passive,Strength Amp III,三段の剛力,Passive,+15 to Strength.,Self,32,[Susano-o] (Clear Archetype),[Zaou-Gongen] (Red Gacha)
@@ -1145,9 +1145,9 @@ passive,Merciless Blow,無慈悲な一撃,Passive,+20% damage when attacking the
 passive,Arms Mastery,武道の素養,Passive,+15% to Phys damage and Phys hit rate.,Self,,[Siegfried],
 passive,Nirvana King,???,Passive,+10% to Phys hit rate. Casts Rebellion at the beginning of the 1st turn.,,,[Rakshasa],
 passive,Counter,反撃,Passive,"When receiving a Phys Attack, 50% chance to counter dealing Phys damage with 50 power.",Self,6,"[Koumokuten] (Purple Archetype), [Momunofu], [Eligor] (Purple Archetype), [Jack Frost] (Purple Archetype), [Slime] (Purple Archetype)","[Ongyo-Ki] (Red Gacha), [Cerberus] (Yellow Gacha), [Sandalphon] (Yellow Gacha), [Scathach] (Yellow Gacha), [Makara] (Yellow Gacha), [Take-Minakata]"
-passive,Retaliate,猛反撃,Passive,"When receiving a Phys Attack, 50% chance to counter dealing Phys damage with 100 power.",Self,12,"[Hanuman] (Purple Archetype), [Berserker] (Purple Archetype), [Ose] (Clear Archetype), [Chimera] (Purple Archetype), [Horkos], [Ares], [Rakshasa] (Purple Archetype)","[Gucumatz] (Purple Gacha), [Abaddon], [Kresnik] (Purple Gacha), [Grendel] (Purple Gacha)"
+passive,Retaliate,猛反撃,Passive,"When receiving a Phys Attack, 50% chance to counter dealing Phys damage with 100 power.",Self,12,"[Rakshasa] (Purple Archetype), [Hanuman] (Purple Archetype), [Berserker] (Purple Archetype), [Ose] (Clear Archetype), [Chimera] (Purple Archetype), [Horkos], [Ares]","[Gucumatz] (Purple Gacha), [Abaddon], [Grendel] (Purple Gacha), [Kresnik] (Purple Gacha)"
 passive,Death Counter,デスカウンター,Passive,"When receiving a Phys Attack, 50% chance to counter dealing Phys damage with 150 power.",Self,18,"[Samael] (Clear Archetype), [Ongyo-Ki] (Purple Archetype), [Pazuzu] (Purple Archetype)",[Zaou-Gongen] (Teal Gacha)
-passive,Endure,食いしばり,Passive,HP stops at 1 HP upon receiving the first killing blow.,Self,6,"[Michael] (Clear Archetype), [Barong] (Clear Archetype), [Rangda] (Purple Archetype), [Kaiwan] (Purple Archetype), [Patrimpas] (Purple Archetype), [Black Ooze] (Purple Archetype), [Raijuu] (Clear Archetype), [Momunofu] (Purple Archetype), [Eligor] (Clear Archetype), [Kudlak] (Purple Archetype), [Rakshasa] (Clear Archetype)","[Horkos], [Grendel] (Yellow Gacha)"
+passive,Endure,食いしばり,Passive,HP stops at 1 HP upon receiving the first killing blow.,Self,6,"[Michael] (Clear Archetype), [Barong] (Clear Archetype), [Rangda] (Purple Archetype), [Kudlak] (Purple Archetype), [Rakshasa] (Clear Archetype), [Kaiwan] (Purple Archetype), [Patrimpas] (Purple Archetype), [Black Ooze] (Purple Archetype), [Raijuu] (Clear Archetype), [Momunofu] (Purple Archetype), [Eligor] (Clear Archetype)","[Grendel] (Yellow Gacha), [Horkos]"
 passive,Enduring Soul,不屈の闘志,Passive,Heals 200 HP upon receiving the first killing blow.,Self,18,"[Metatron] (Clear Archetype), [Yoshitsune] (Clear Archetype), [Zaou-Gongen] (Clear Archetype), [Siegfried] (Purple Archetype), [Berserker] (Clear Archetype)","[Huang Long] (Teal Gacha), [Attis]"
 passive,Avatar,アヴァターラ,Passive,Heals 200 HP upon receiving the first killing blow. Heals 40% HP when clearing a wave.,Self,,[Vishnu],
 passive,Life Aid,勝利の息吹,Passive,Heals 30% HP when clearing a wave.,Self,6,"[Huang Di] (Clear Archetype), [Huang Long] (Clear Archetype), [Siegfried] (Clear Archetype), [Jeanne d'Arc] (Clear Archetype), [Attis] (Clear Archetype), [Gui Xian] (Purple Archetype), [Lailah] (Purple Archetype)",[Michael]
@@ -1162,7 +1162,7 @@ passive,Hell Guard,???,Passive,"While the demon with this skill is alive, -15% d
 passive,Seal of Suffering,???,Passive,+10% damage to Cursed enemies. -10% damage from Cursed enemies.,Self,,"[Grendel], [Ippon-Datara]",
 passive,Seal of Agony,???,Passive,+15% damage to Cursed enemies. -15% damage from Cursed enemies.,Self,,"[Black Frost], [Kudlak]",
 passive,Auto-Taraka,タルカオート,Passive,Casts Tarukaja at the beginning of the 1st turn.,Self,12,"[Ananta] (Purple Archetype), [Zhong Kui], [Orochi] (Purple Archetype), [Fenrir]","[Huang Di] (Red Gacha), [Zaou-Gongen] (Yellow Gacha)"
-passive,Auto-Rakuga,ラクカオート,Passive,Casts Rakukaja at the beginning of the 1st turn.,Self,12,"[Trumpeter] (Purple Archetype), [Ananta], [Sphinx] (Purple Archetype), [Ongyo-Ki], [Horkos] (Clear Archetype), [Hecatoncheires] (Clear Archetype)",
+passive,Auto-Rakuga,ラクカオート,Passive,Casts Rakukaja at the beginning of the 1st turn.,Self,12,"[Trumpeter] (Purple Archetype), [Ananta], [Sphinx] (Purple Archetype), [Hecatoncheires] (Clear Archetype), [Ongyo-Ki], [Horkos] (Clear Archetype)",
 passive,Auto-Sukuka,スクカオート,Passive,Casts Sukukaja at the beginning of the 1st turn.,Self,12,"[Ananta], [Amaterasu] (Clear Archetype), [Hell Biker] (Purple Archetype), [Oberon] (Purple Archetype), [Sandalphon], [Virtue] (Purple Archetype), [Jatayu], [Chupacabra] (Clear Archetype)",[Yoshitsune] (Yellow Gacha)
 passive,Auto-Tarunda,タルンダオート,Passive,Casts Tarunda at the beginning of the 1st turn.,Self,12,"[Quetzalcoatl] (Purple Archetype), [Gucumatz], [Feng Huang]",
 passive,Auto-Rakunda,ラクンダオート,Passive,Casts Rakunda at the beginning of the 1st turn.,Self,12,[Garuda],[Lakshmi] (Yellow Gacha)
